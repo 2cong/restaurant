@@ -317,3 +317,609 @@
 2020-08-01 07:45:27,187 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores"  LIMIT 2 OFFSET 20; args=()
 2020-08-01 07:45:30,169 DEBUG (0.000) SELECT COUNT(*) AS "__count" FROM "stores"; args=()
 2020-08-01 07:45:30,170 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores"  LIMIT 20; args=()
+2020-08-01 07:47:17,745 DEBUG (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-08-01 07:47:17,747 DEBUG (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2020-08-01 07:47:19,225 DEBUG (0.000) SELECT COUNT(*) AS "__count" FROM "stores"; args=()
+2020-08-01 07:47:19,225 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores"  LIMIT 20; args=()
+2020-08-01 07:49:35,091 DEBUG (0.000) SELECT COUNT(*) AS "__count" FROM "stores"; args=()
+2020-08-01 08:08:00,132 DEBUG (0.000) INSERT INTO "stores" ("name", "description", "address", "phone_number") VALUES ('세라즈피자펍', '뉴질랜드 사장님이 만드시는 수제피자와 맛있는 수제맥주 14가지 온탭', '서울 금천구 가산디지털1로 168', '010- 6688-0415'); args=['세라즈피자펍', '뉴질랜드 사장님이 만드시는 수제피자와 맛있는 수제맥주 14가지 온탭', '서울 금천구 가산디지털1로 168', '010- 6688-0415']
+2020-08-01 08:08:42,120 DEBUG (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-08-01 08:08:54,429 DEBUG (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-08-01 08:08:54,429 DEBUG (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-08-01 08:08:54,430 DEBUG (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-08-01 08:08:54,430 DEBUG (0.000) PRAGMA foreign_keys = OFF; args=None
+2020-08-01 08:08:54,430 DEBUG (0.000) PRAGMA foreign_keys; args=None
+2020-08-01 08:08:54,430 DEBUG (0.000) BEGIN; args=None
+2020-08-01 08:08:54,430 DEBUG CREATE TABLE "django_migrations" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "app" varchar(255) NOT NULL, "name" varchar(255) NOT NULL, "applied" datetime NOT NULL); (params None)
+2020-08-01 08:08:54,431 DEBUG (0.000) CREATE TABLE "django_migrations" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "app" varchar(255) NOT NULL, "name" varchar(255) NOT NULL, "applied" datetime NOT NULL); args=None
+2020-08-01 08:08:54,431 DEBUG (0.000) PRAGMA foreign_key_check; args=None
+2020-08-01 08:08:54,432 DEBUG (0.000) PRAGMA foreign_keys = ON; args=None
+2020-08-01 08:08:54,432 DEBUG (0.000) PRAGMA foreign_keys = OFF; args=None
+2020-08-01 08:08:54,432 DEBUG (0.000) PRAGMA foreign_keys; args=None
+2020-08-01 08:08:54,433 DEBUG (0.000) BEGIN; args=None
+2020-08-01 08:08:54,433 DEBUG CREATE TABLE "django_content_type" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(100) NOT NULL, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL); (params None)
+2020-08-01 08:08:54,434 DEBUG (0.000) CREATE TABLE "django_content_type" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(100) NOT NULL, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL); args=None
+2020-08-01 08:08:54,435 DEBUG CREATE UNIQUE INDEX "django_content_type_app_label_model_76bd3d3b_uniq" ON "django_content_type" ("app_label", "model"); (params ())
+2020-08-01 08:08:54,435 DEBUG (0.000) CREATE UNIQUE INDEX "django_content_type_app_label_model_76bd3d3b_uniq" ON "django_content_type" ("app_label", "model"); args=()
+2020-08-01 08:08:54,435 DEBUG (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-08-01 08:08:54,436 DEBUG (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('contenttypes', '0001_initial', '2020-08-01 08:08:54.435694'); args=['contenttypes', '0001_initial', '2020-08-01 08:08:54.435694']
+2020-08-01 08:08:54,437 DEBUG (0.000) PRAGMA foreign_key_check; args=None
+2020-08-01 08:08:54,437 DEBUG (0.000) PRAGMA foreign_keys = ON; args=None
+2020-08-01 08:08:54,437 DEBUG (0.000) PRAGMA foreign_keys = OFF; args=None
+2020-08-01 08:08:54,437 DEBUG (0.000) PRAGMA foreign_keys; args=None
+2020-08-01 08:08:54,438 DEBUG (0.000) BEGIN; args=None
+2020-08-01 08:08:54,439 DEBUG CREATE TABLE "auth_permission" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "content_type_id" integer NOT NULL REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED, "codename" varchar(100) NOT NULL); (params None)
+2020-08-01 08:08:54,439 DEBUG (0.000) CREATE TABLE "auth_permission" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "content_type_id" integer NOT NULL REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED, "codename" varchar(100) NOT NULL); args=None
+2020-08-01 08:08:54,443 DEBUG CREATE TABLE "auth_group" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(80) NOT NULL UNIQUE); (params None)
+2020-08-01 08:08:54,443 DEBUG (0.000) CREATE TABLE "auth_group" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(80) NOT NULL UNIQUE); args=None
+2020-08-01 08:08:54,443 DEBUG CREATE TABLE "auth_group_permissions" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "group_id" integer NOT NULL REFERENCES "auth_group" ("id") DEFERRABLE INITIALLY DEFERRED, "permission_id" integer NOT NULL REFERENCES "auth_permission" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
+2020-08-01 08:08:54,444 DEBUG (0.000) CREATE TABLE "auth_group_permissions" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "group_id" integer NOT NULL REFERENCES "auth_group" ("id") DEFERRABLE INITIALLY DEFERRED, "permission_id" integer NOT NULL REFERENCES "auth_permission" ("id") DEFERRABLE INITIALLY DEFERRED); args=None
+2020-08-01 08:08:54,455 DEBUG CREATE TABLE "auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NOT NULL, "is_superuser" bool NOT NULL, "username" varchar(30) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(75) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL); (params None)
+2020-08-01 08:08:54,455 DEBUG (0.000) CREATE TABLE "auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NOT NULL, "is_superuser" bool NOT NULL, "username" varchar(30) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(75) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL); args=None
+2020-08-01 08:08:54,455 DEBUG CREATE TABLE "auth_user_groups" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED, "group_id" integer NOT NULL REFERENCES "auth_group" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
+2020-08-01 08:08:54,456 DEBUG (0.000) CREATE TABLE "auth_user_groups" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED, "group_id" integer NOT NULL REFERENCES "auth_group" ("id") DEFERRABLE INITIALLY DEFERRED); args=None
+2020-08-01 08:08:54,456 DEBUG CREATE TABLE "auth_user_user_permissions" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED, "permission_id" integer NOT NULL REFERENCES "auth_permission" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
+2020-08-01 08:08:54,456 DEBUG (0.000) CREATE TABLE "auth_user_user_permissions" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED, "permission_id" integer NOT NULL REFERENCES "auth_permission" ("id") DEFERRABLE INITIALLY DEFERRED); args=None
+2020-08-01 08:08:54,457 DEBUG (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-08-01 08:08:54,457 DEBUG (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0001_initial', '2020-08-01 08:08:54.457401'); args=['auth', '0001_initial', '2020-08-01 08:08:54.457401']
+2020-08-01 08:08:54,457 DEBUG (0.000) PRAGMA foreign_key_check; args=None
+2020-08-01 08:08:54,458 DEBUG CREATE UNIQUE INDEX "auth_permission_content_type_id_codename_01ab375a_uniq" ON "auth_permission" ("content_type_id", "codename"); (params ())
+2020-08-01 08:08:54,458 DEBUG (0.000) CREATE UNIQUE INDEX "auth_permission_content_type_id_codename_01ab375a_uniq" ON "auth_permission" ("content_type_id", "codename"); args=()
+2020-08-01 08:08:54,458 DEBUG CREATE INDEX "auth_permission_content_type_id_2f476e4b" ON "auth_permission" ("content_type_id"); (params ())
+2020-08-01 08:08:54,458 DEBUG (0.000) CREATE INDEX "auth_permission_content_type_id_2f476e4b" ON "auth_permission" ("content_type_id"); args=()
+2020-08-01 08:08:54,458 DEBUG CREATE UNIQUE INDEX "auth_group_permissions_group_id_permission_id_0cd325b0_uniq" ON "auth_group_permissions" ("group_id", "permission_id"); (params ())
+2020-08-01 08:08:54,458 DEBUG (0.000) CREATE UNIQUE INDEX "auth_group_permissions_group_id_permission_id_0cd325b0_uniq" ON "auth_group_permissions" ("group_id", "permission_id"); args=()
+2020-08-01 08:08:54,458 DEBUG CREATE INDEX "auth_group_permissions_group_id_b120cbf9" ON "auth_group_permissions" ("group_id"); (params ())
+2020-08-01 08:08:54,459 DEBUG (0.000) CREATE INDEX "auth_group_permissions_group_id_b120cbf9" ON "auth_group_permissions" ("group_id"); args=()
+2020-08-01 08:08:54,459 DEBUG CREATE INDEX "auth_group_permissions_permission_id_84c5c92e" ON "auth_group_permissions" ("permission_id"); (params ())
+2020-08-01 08:08:54,459 DEBUG (0.000) CREATE INDEX "auth_group_permissions_permission_id_84c5c92e" ON "auth_group_permissions" ("permission_id"); args=()
+2020-08-01 08:08:54,459 DEBUG CREATE UNIQUE INDEX "auth_user_groups_user_id_group_id_94350c0c_uniq" ON "auth_user_groups" ("user_id", "group_id"); (params ())
+2020-08-01 08:08:54,459 DEBUG (0.000) CREATE UNIQUE INDEX "auth_user_groups_user_id_group_id_94350c0c_uniq" ON "auth_user_groups" ("user_id", "group_id"); args=()
+2020-08-01 08:08:54,459 DEBUG CREATE INDEX "auth_user_groups_user_id_6a12ed8b" ON "auth_user_groups" ("user_id"); (params ())
+2020-08-01 08:08:54,459 DEBUG (0.000) CREATE INDEX "auth_user_groups_user_id_6a12ed8b" ON "auth_user_groups" ("user_id"); args=()
+2020-08-01 08:08:54,459 DEBUG CREATE INDEX "auth_user_groups_group_id_97559544" ON "auth_user_groups" ("group_id"); (params ())
+2020-08-01 08:08:54,460 DEBUG (0.000) CREATE INDEX "auth_user_groups_group_id_97559544" ON "auth_user_groups" ("group_id"); args=()
+2020-08-01 08:08:54,460 DEBUG CREATE UNIQUE INDEX "auth_user_user_permissions_user_id_permission_id_14a6b632_uniq" ON "auth_user_user_permissions" ("user_id", "permission_id"); (params ())
+2020-08-01 08:08:54,460 DEBUG (0.000) CREATE UNIQUE INDEX "auth_user_user_permissions_user_id_permission_id_14a6b632_uniq" ON "auth_user_user_permissions" ("user_id", "permission_id"); args=()
+2020-08-01 08:08:54,460 DEBUG CREATE INDEX "auth_user_user_permissions_user_id_a95ead1b" ON "auth_user_user_permissions" ("user_id"); (params ())
+2020-08-01 08:08:54,460 DEBUG (0.000) CREATE INDEX "auth_user_user_permissions_user_id_a95ead1b" ON "auth_user_user_permissions" ("user_id"); args=()
+2020-08-01 08:08:54,460 DEBUG CREATE INDEX "auth_user_user_permissions_permission_id_1fbb5f2c" ON "auth_user_user_permissions" ("permission_id"); (params ())
+2020-08-01 08:08:54,460 DEBUG (0.000) CREATE INDEX "auth_user_user_permissions_permission_id_1fbb5f2c" ON "auth_user_user_permissions" ("permission_id"); args=()
+2020-08-01 08:08:54,461 DEBUG (0.000) PRAGMA foreign_keys = ON; args=None
+2020-08-01 08:08:54,461 DEBUG (0.000) PRAGMA foreign_keys = OFF; args=None
+2020-08-01 08:08:54,461 DEBUG (0.000) PRAGMA foreign_keys; args=None
+2020-08-01 08:08:54,462 DEBUG (0.000) BEGIN; args=None
+2020-08-01 08:08:54,467 DEBUG CREATE TABLE "django_admin_log" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "action_time" datetime NOT NULL, "object_id" text NULL, "object_repr" varchar(200) NOT NULL, "action_flag" smallint unsigned NOT NULL CHECK ("action_flag" >= 0), "change_message" text NOT NULL, "content_type_id" integer NULL REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
+2020-08-01 08:08:54,468 DEBUG (0.000) CREATE TABLE "django_admin_log" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "action_time" datetime NOT NULL, "object_id" text NULL, "object_repr" varchar(200) NOT NULL, "action_flag" smallint unsigned NOT NULL CHECK ("action_flag" >= 0), "change_message" text NOT NULL, "content_type_id" integer NULL REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED); args=None
+2020-08-01 08:08:54,468 DEBUG (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-08-01 08:08:54,468 DEBUG (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('admin', '0001_initial', '2020-08-01 08:08:54.468499'); args=['admin', '0001_initial', '2020-08-01 08:08:54.468499']
+2020-08-01 08:08:54,468 DEBUG (0.000) PRAGMA foreign_key_check; args=None
+2020-08-01 08:08:54,468 DEBUG CREATE INDEX "django_admin_log_content_type_id_c4bce8eb" ON "django_admin_log" ("content_type_id"); (params ())
+2020-08-01 08:08:54,469 DEBUG (0.000) CREATE INDEX "django_admin_log_content_type_id_c4bce8eb" ON "django_admin_log" ("content_type_id"); args=()
+2020-08-01 08:08:54,469 DEBUG CREATE INDEX "django_admin_log_user_id_c564eba6" ON "django_admin_log" ("user_id"); (params ())
+2020-08-01 08:08:54,469 DEBUG (0.000) CREATE INDEX "django_admin_log_user_id_c564eba6" ON "django_admin_log" ("user_id"); args=()
+2020-08-01 08:08:54,469 DEBUG (0.000) PRAGMA foreign_keys = ON; args=None
+2020-08-01 08:08:54,470 DEBUG (0.000) PRAGMA foreign_keys = OFF; args=None
+2020-08-01 08:08:54,470 DEBUG (0.000) PRAGMA foreign_keys; args=None
+2020-08-01 08:08:54,470 DEBUG (0.000) BEGIN; args=None
+2020-08-01 08:08:54,476 DEBUG CREATE TABLE "new__django_admin_log" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "object_id" text NULL, "object_repr" varchar(200) NOT NULL, "action_flag" smallint unsigned NOT NULL CHECK ("action_flag" >= 0), "change_message" text NOT NULL, "content_type_id" integer NULL REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED, "action_time" datetime NOT NULL); (params None)
+2020-08-01 08:08:54,476 DEBUG (0.000) CREATE TABLE "new__django_admin_log" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "object_id" text NULL, "object_repr" varchar(200) NOT NULL, "action_flag" smallint unsigned NOT NULL CHECK ("action_flag" >= 0), "change_message" text NOT NULL, "content_type_id" integer NULL REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED, "action_time" datetime NOT NULL); args=None
+2020-08-01 08:08:54,477 DEBUG INSERT INTO "new__django_admin_log" ("id", "object_id", "object_repr", "action_flag", "change_message", "content_type_id", "user_id", "action_time") SELECT "id", "object_id", "object_repr", "action_flag", "change_message", "content_type_id", "user_id", "action_time" FROM "django_admin_log"; (params ())
+2020-08-01 08:08:54,477 DEBUG (0.000) INSERT INTO "new__django_admin_log" ("id", "object_id", "object_repr", "action_flag", "change_message", "content_type_id", "user_id", "action_time") SELECT "id", "object_id", "object_repr", "action_flag", "change_message", "content_type_id", "user_id", "action_time" FROM "django_admin_log"; args=()
+2020-08-01 08:08:54,477 DEBUG DROP TABLE "django_admin_log"; (params ())
+2020-08-01 08:08:54,477 DEBUG (0.000) DROP TABLE "django_admin_log"; args=()
+2020-08-01 08:08:54,477 DEBUG ALTER TABLE "new__django_admin_log" RENAME TO "django_admin_log"; (params ())
+2020-08-01 08:08:54,478 DEBUG (0.001) ALTER TABLE "new__django_admin_log" RENAME TO "django_admin_log"; args=()
+2020-08-01 08:08:54,478 DEBUG CREATE INDEX "django_admin_log_content_type_id_c4bce8eb" ON "django_admin_log" ("content_type_id"); (params ())
+2020-08-01 08:08:54,478 DEBUG (0.000) CREATE INDEX "django_admin_log_content_type_id_c4bce8eb" ON "django_admin_log" ("content_type_id"); args=()
+2020-08-01 08:08:54,479 DEBUG CREATE INDEX "django_admin_log_user_id_c564eba6" ON "django_admin_log" ("user_id"); (params ())
+2020-08-01 08:08:54,479 DEBUG (0.000) CREATE INDEX "django_admin_log_user_id_c564eba6" ON "django_admin_log" ("user_id"); args=()
+2020-08-01 08:08:54,479 DEBUG (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-08-01 08:08:54,479 DEBUG (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('admin', '0002_logentry_remove_auto_add', '2020-08-01 08:08:54.479523'); args=['admin', '0002_logentry_remove_auto_add', '2020-08-01 08:08:54.479523']
+2020-08-01 08:08:54,479 DEBUG (0.000) PRAGMA foreign_key_check; args=None
+2020-08-01 08:08:54,480 DEBUG (0.000) PRAGMA foreign_keys = ON; args=None
+2020-08-01 08:08:54,480 DEBUG (0.000) PRAGMA foreign_keys = OFF; args=None
+2020-08-01 08:08:54,480 DEBUG (0.000) PRAGMA foreign_keys; args=None
+2020-08-01 08:08:54,480 DEBUG (0.000) BEGIN; args=None
+2020-08-01 08:08:54,486 DEBUG CREATE TABLE "new__django_admin_log" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "action_time" datetime NOT NULL, "object_id" text NULL, "object_repr" varchar(200) NOT NULL, "change_message" text NOT NULL, "content_type_id" integer NULL REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED, "action_flag" smallint unsigned NOT NULL CHECK ("action_flag" >= 0)); (params None)
+2020-08-01 08:08:54,487 DEBUG (0.000) CREATE TABLE "new__django_admin_log" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "action_time" datetime NOT NULL, "object_id" text NULL, "object_repr" varchar(200) NOT NULL, "change_message" text NOT NULL, "content_type_id" integer NULL REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED, "action_flag" smallint unsigned NOT NULL CHECK ("action_flag" >= 0)); args=None
+2020-08-01 08:08:54,487 DEBUG INSERT INTO "new__django_admin_log" ("id", "action_time", "object_id", "object_repr", "change_message", "content_type_id", "user_id", "action_flag") SELECT "id", "action_time", "object_id", "object_repr", "change_message", "content_type_id", "user_id", "action_flag" FROM "django_admin_log"; (params ())
+2020-08-01 08:08:54,487 DEBUG (0.000) INSERT INTO "new__django_admin_log" ("id", "action_time", "object_id", "object_repr", "change_message", "content_type_id", "user_id", "action_flag") SELECT "id", "action_time", "object_id", "object_repr", "change_message", "content_type_id", "user_id", "action_flag" FROM "django_admin_log"; args=()
+2020-08-01 08:08:54,487 DEBUG DROP TABLE "django_admin_log"; (params ())
+2020-08-01 08:08:54,487 DEBUG (0.000) DROP TABLE "django_admin_log"; args=()
+2020-08-01 08:08:54,488 DEBUG ALTER TABLE "new__django_admin_log" RENAME TO "django_admin_log"; (params ())
+2020-08-01 08:08:54,488 DEBUG (0.001) ALTER TABLE "new__django_admin_log" RENAME TO "django_admin_log"; args=()
+2020-08-01 08:08:54,489 DEBUG CREATE INDEX "django_admin_log_content_type_id_c4bce8eb" ON "django_admin_log" ("content_type_id"); (params ())
+2020-08-01 08:08:54,489 DEBUG (0.000) CREATE INDEX "django_admin_log_content_type_id_c4bce8eb" ON "django_admin_log" ("content_type_id"); args=()
+2020-08-01 08:08:54,489 DEBUG CREATE INDEX "django_admin_log_user_id_c564eba6" ON "django_admin_log" ("user_id"); (params ())
+2020-08-01 08:08:54,489 DEBUG (0.000) CREATE INDEX "django_admin_log_user_id_c564eba6" ON "django_admin_log" ("user_id"); args=()
+2020-08-01 08:08:54,489 DEBUG (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-08-01 08:08:54,490 DEBUG (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('admin', '0003_logentry_add_action_flag_choices', '2020-08-01 08:08:54.490048'); args=['admin', '0003_logentry_add_action_flag_choices', '2020-08-01 08:08:54.490048']
+2020-08-01 08:08:54,490 DEBUG (0.000) PRAGMA foreign_key_check; args=None
+2020-08-01 08:08:54,491 DEBUG (0.000) PRAGMA foreign_keys = ON; args=None
+2020-08-01 08:08:54,491 DEBUG (0.000) PRAGMA foreign_keys = OFF; args=None
+2020-08-01 08:08:54,491 DEBUG (0.000) PRAGMA foreign_keys; args=None
+2020-08-01 08:08:54,491 DEBUG (0.000) BEGIN; args=None
+2020-08-01 08:08:54,496 DEBUG CREATE TABLE "new__django_content_type" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL, "name" varchar(100) NULL); (params None)
+2020-08-01 08:08:54,497 DEBUG (0.000) CREATE TABLE "new__django_content_type" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL, "name" varchar(100) NULL); args=None
+2020-08-01 08:08:54,497 DEBUG INSERT INTO "new__django_content_type" ("id", "app_label", "model", "name") SELECT "id", "app_label", "model", "name" FROM "django_content_type"; (params ())
+2020-08-01 08:08:54,497 DEBUG (0.000) INSERT INTO "new__django_content_type" ("id", "app_label", "model", "name") SELECT "id", "app_label", "model", "name" FROM "django_content_type"; args=()
+2020-08-01 08:08:54,497 DEBUG DROP TABLE "django_content_type"; (params ())
+2020-08-01 08:08:54,497 DEBUG (0.000) DROP TABLE "django_content_type"; args=()
+2020-08-01 08:08:54,497 DEBUG ALTER TABLE "new__django_content_type" RENAME TO "django_content_type"; (params ())
+2020-08-01 08:08:54,498 DEBUG (0.001) ALTER TABLE "new__django_content_type" RENAME TO "django_content_type"; args=()
+2020-08-01 08:08:54,498 DEBUG CREATE UNIQUE INDEX "django_content_type_app_label_model_76bd3d3b_uniq" ON "django_content_type" ("app_label", "model"); (params ())
+2020-08-01 08:08:54,498 DEBUG (0.000) CREATE UNIQUE INDEX "django_content_type_app_label_model_76bd3d3b_uniq" ON "django_content_type" ("app_label", "model"); args=()
+2020-08-01 08:08:54,506 DEBUG CREATE TABLE "new__django_content_type" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL); (params None)
+2020-08-01 08:08:54,507 DEBUG (0.000) CREATE TABLE "new__django_content_type" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL); args=None
+2020-08-01 08:08:54,507 DEBUG INSERT INTO "new__django_content_type" ("id", "app_label", "model") SELECT "id", "app_label", "model" FROM "django_content_type"; (params ())
+2020-08-01 08:08:54,507 DEBUG (0.000) INSERT INTO "new__django_content_type" ("id", "app_label", "model") SELECT "id", "app_label", "model" FROM "django_content_type"; args=()
+2020-08-01 08:08:54,507 DEBUG DROP TABLE "django_content_type"; (params ())
+2020-08-01 08:08:54,507 DEBUG (0.000) DROP TABLE "django_content_type"; args=()
+2020-08-01 08:08:54,507 DEBUG ALTER TABLE "new__django_content_type" RENAME TO "django_content_type"; (params ())
+2020-08-01 08:08:54,508 DEBUG (0.001) ALTER TABLE "new__django_content_type" RENAME TO "django_content_type"; args=()
+2020-08-01 08:08:54,508 DEBUG CREATE UNIQUE INDEX "django_content_type_app_label_model_76bd3d3b_uniq" ON "django_content_type" ("app_label", "model"); (params ())
+2020-08-01 08:08:54,508 DEBUG (0.000) CREATE UNIQUE INDEX "django_content_type_app_label_model_76bd3d3b_uniq" ON "django_content_type" ("app_label", "model"); args=()
+2020-08-01 08:08:54,509 DEBUG (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-08-01 08:08:54,509 DEBUG (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('contenttypes', '0002_remove_content_type_name', '2020-08-01 08:08:54.509206'); args=['contenttypes', '0002_remove_content_type_name', '2020-08-01 08:08:54.509206']
+2020-08-01 08:08:54,509 DEBUG (0.000) PRAGMA foreign_key_check; args=None
+2020-08-01 08:08:54,510 DEBUG (0.000) PRAGMA foreign_keys = ON; args=None
+2020-08-01 08:08:54,510 DEBUG (0.000) PRAGMA foreign_keys = OFF; args=None
+2020-08-01 08:08:54,510 DEBUG (0.000) PRAGMA foreign_keys; args=None
+2020-08-01 08:08:54,510 DEBUG (0.000) BEGIN; args=None
+2020-08-01 08:08:54,513 DEBUG CREATE TABLE "new__auth_permission" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "content_type_id" integer NOT NULL REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED, "codename" varchar(100) NOT NULL, "name" varchar(255) NOT NULL); (params None)
+2020-08-01 08:08:54,513 DEBUG (0.000) CREATE TABLE "new__auth_permission" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "content_type_id" integer NOT NULL REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED, "codename" varchar(100) NOT NULL, "name" varchar(255) NOT NULL); args=None
+2020-08-01 08:08:54,513 DEBUG INSERT INTO "new__auth_permission" ("id", "content_type_id", "codename", "name") SELECT "id", "content_type_id", "codename", "name" FROM "auth_permission"; (params ())
+2020-08-01 08:08:54,513 DEBUG (0.000) INSERT INTO "new__auth_permission" ("id", "content_type_id", "codename", "name") SELECT "id", "content_type_id", "codename", "name" FROM "auth_permission"; args=()
+2020-08-01 08:08:54,514 DEBUG DROP TABLE "auth_permission"; (params ())
+2020-08-01 08:08:54,514 DEBUG (0.000) DROP TABLE "auth_permission"; args=()
+2020-08-01 08:08:54,514 DEBUG ALTER TABLE "new__auth_permission" RENAME TO "auth_permission"; (params ())
+2020-08-01 08:08:54,515 DEBUG (0.001) ALTER TABLE "new__auth_permission" RENAME TO "auth_permission"; args=()
+2020-08-01 08:08:54,515 DEBUG CREATE UNIQUE INDEX "auth_permission_content_type_id_codename_01ab375a_uniq" ON "auth_permission" ("content_type_id", "codename"); (params ())
+2020-08-01 08:08:54,515 DEBUG (0.000) CREATE UNIQUE INDEX "auth_permission_content_type_id_codename_01ab375a_uniq" ON "auth_permission" ("content_type_id", "codename"); args=()
+2020-08-01 08:08:54,515 DEBUG CREATE INDEX "auth_permission_content_type_id_2f476e4b" ON "auth_permission" ("content_type_id"); (params ())
+2020-08-01 08:08:54,515 DEBUG (0.000) CREATE INDEX "auth_permission_content_type_id_2f476e4b" ON "auth_permission" ("content_type_id"); args=()
+2020-08-01 08:08:54,515 DEBUG (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-08-01 08:08:54,516 DEBUG (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0002_alter_permission_name_max_length', '2020-08-01 08:08:54.515860'); args=['auth', '0002_alter_permission_name_max_length', '2020-08-01 08:08:54.515860']
+2020-08-01 08:08:54,516 DEBUG (0.000) PRAGMA foreign_key_check; args=None
+2020-08-01 08:08:54,516 DEBUG (0.000) PRAGMA foreign_keys = ON; args=None
+2020-08-01 08:08:54,516 DEBUG (0.000) PRAGMA foreign_keys = OFF; args=None
+2020-08-01 08:08:54,517 DEBUG (0.000) PRAGMA foreign_keys; args=None
+2020-08-01 08:08:54,517 DEBUG (0.000) BEGIN; args=None
+2020-08-01 08:08:54,523 DEBUG CREATE TABLE "new__auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NOT NULL, "is_superuser" bool NOT NULL, "username" varchar(30) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "email" varchar(254) NOT NULL); (params None)
+2020-08-01 08:08:54,524 DEBUG (0.000) CREATE TABLE "new__auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NOT NULL, "is_superuser" bool NOT NULL, "username" varchar(30) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "email" varchar(254) NOT NULL); args=None
+2020-08-01 08:08:54,524 DEBUG INSERT INTO "new__auth_user" ("id", "password", "last_login", "is_superuser", "username", "first_name", "last_name", "is_staff", "is_active", "date_joined", "email") SELECT "id", "password", "last_login", "is_superuser", "username", "first_name", "last_name", "is_staff", "is_active", "date_joined", "email" FROM "auth_user"; (params ())
+2020-08-01 08:08:54,524 DEBUG (0.000) INSERT INTO "new__auth_user" ("id", "password", "last_login", "is_superuser", "username", "first_name", "last_name", "is_staff", "is_active", "date_joined", "email") SELECT "id", "password", "last_login", "is_superuser", "username", "first_name", "last_name", "is_staff", "is_active", "date_joined", "email" FROM "auth_user"; args=()
+2020-08-01 08:08:54,524 DEBUG DROP TABLE "auth_user"; (params ())
+2020-08-01 08:08:54,524 DEBUG (0.000) DROP TABLE "auth_user"; args=()
+2020-08-01 08:08:54,524 DEBUG ALTER TABLE "new__auth_user" RENAME TO "auth_user"; (params ())
+2020-08-01 08:08:54,525 DEBUG (0.001) ALTER TABLE "new__auth_user" RENAME TO "auth_user"; args=()
+2020-08-01 08:08:54,525 DEBUG (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-08-01 08:08:54,525 DEBUG (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0003_alter_user_email_max_length', '2020-08-01 08:08:54.525730'); args=['auth', '0003_alter_user_email_max_length', '2020-08-01 08:08:54.525730']
+2020-08-01 08:08:54,526 DEBUG (0.000) PRAGMA foreign_key_check; args=None
+2020-08-01 08:08:54,526 DEBUG (0.000) PRAGMA foreign_keys = ON; args=None
+2020-08-01 08:08:54,526 DEBUG (0.000) PRAGMA foreign_keys = OFF; args=None
+2020-08-01 08:08:54,526 DEBUG (0.000) PRAGMA foreign_keys; args=None
+2020-08-01 08:08:54,532 DEBUG (0.000) BEGIN; args=None
+2020-08-01 08:08:54,538 DEBUG CREATE TABLE "new__auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NOT NULL, "is_superuser" bool NOT NULL, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(254) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "username" varchar(30) NOT NULL UNIQUE); (params None)
+2020-08-01 08:08:54,538 DEBUG (0.000) CREATE TABLE "new__auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NOT NULL, "is_superuser" bool NOT NULL, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(254) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "username" varchar(30) NOT NULL UNIQUE); args=None
+2020-08-01 08:08:54,539 DEBUG INSERT INTO "new__auth_user" ("id", "password", "last_login", "is_superuser", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "username") SELECT "id", "password", "last_login", "is_superuser", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "username" FROM "auth_user"; (params ())
+2020-08-01 08:08:54,539 DEBUG (0.000) INSERT INTO "new__auth_user" ("id", "password", "last_login", "is_superuser", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "username") SELECT "id", "password", "last_login", "is_superuser", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "username" FROM "auth_user"; args=()
+2020-08-01 08:08:54,539 DEBUG DROP TABLE "auth_user"; (params ())
+2020-08-01 08:08:54,539 DEBUG (0.000) DROP TABLE "auth_user"; args=()
+2020-08-01 08:08:54,539 DEBUG ALTER TABLE "new__auth_user" RENAME TO "auth_user"; (params ())
+2020-08-01 08:08:54,540 DEBUG (0.001) ALTER TABLE "new__auth_user" RENAME TO "auth_user"; args=()
+2020-08-01 08:08:54,540 DEBUG (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-08-01 08:08:54,541 DEBUG (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0004_alter_user_username_opts', '2020-08-01 08:08:54.540978'); args=['auth', '0004_alter_user_username_opts', '2020-08-01 08:08:54.540978']
+2020-08-01 08:08:54,541 DEBUG (0.000) PRAGMA foreign_key_check; args=None
+2020-08-01 08:08:54,542 DEBUG (0.000) PRAGMA foreign_keys = ON; args=None
+2020-08-01 08:08:54,542 DEBUG (0.000) PRAGMA foreign_keys = OFF; args=None
+2020-08-01 08:08:54,542 DEBUG (0.000) PRAGMA foreign_keys; args=None
+2020-08-01 08:08:54,542 DEBUG (0.000) BEGIN; args=None
+2020-08-01 08:08:54,548 DEBUG CREATE TABLE "new__auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "is_superuser" bool NOT NULL, "username" varchar(30) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(254) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "last_login" datetime NULL); (params None)
+2020-08-01 08:08:54,548 DEBUG (0.000) CREATE TABLE "new__auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "is_superuser" bool NOT NULL, "username" varchar(30) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(254) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "last_login" datetime NULL); args=None
+2020-08-01 08:08:54,548 DEBUG INSERT INTO "new__auth_user" ("id", "password", "is_superuser", "username", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "last_login") SELECT "id", "password", "is_superuser", "username", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "last_login" FROM "auth_user"; (params ())
+2020-08-01 08:08:54,548 DEBUG (0.000) INSERT INTO "new__auth_user" ("id", "password", "is_superuser", "username", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "last_login") SELECT "id", "password", "is_superuser", "username", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "last_login" FROM "auth_user"; args=()
+2020-08-01 08:08:54,549 DEBUG DROP TABLE "auth_user"; (params ())
+2020-08-01 08:08:54,549 DEBUG (0.000) DROP TABLE "auth_user"; args=()
+2020-08-01 08:08:54,549 DEBUG ALTER TABLE "new__auth_user" RENAME TO "auth_user"; (params ())
+2020-08-01 08:08:54,550 DEBUG (0.001) ALTER TABLE "new__auth_user" RENAME TO "auth_user"; args=()
+2020-08-01 08:08:54,550 DEBUG (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-08-01 08:08:54,550 DEBUG (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0005_alter_user_last_login_null', '2020-08-01 08:08:54.550596'); args=['auth', '0005_alter_user_last_login_null', '2020-08-01 08:08:54.550596']
+2020-08-01 08:08:54,550 DEBUG (0.000) PRAGMA foreign_key_check; args=None
+2020-08-01 08:08:54,551 DEBUG (0.000) PRAGMA foreign_keys = ON; args=None
+2020-08-01 08:08:54,551 DEBUG (0.000) PRAGMA foreign_keys = OFF; args=None
+2020-08-01 08:08:54,551 DEBUG (0.000) PRAGMA foreign_keys; args=None
+2020-08-01 08:08:54,552 DEBUG (0.000) BEGIN; args=None
+2020-08-01 08:08:54,552 DEBUG (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-08-01 08:08:54,552 DEBUG (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0006_require_contenttypes_0002', '2020-08-01 08:08:54.552329'); args=['auth', '0006_require_contenttypes_0002', '2020-08-01 08:08:54.552329']
+2020-08-01 08:08:54,552 DEBUG (0.000) PRAGMA foreign_key_check; args=None
+2020-08-01 08:08:54,553 DEBUG (0.000) PRAGMA foreign_keys = ON; args=None
+2020-08-01 08:08:54,553 DEBUG (0.000) PRAGMA foreign_keys = OFF; args=None
+2020-08-01 08:08:54,553 DEBUG (0.000) PRAGMA foreign_keys; args=None
+2020-08-01 08:08:54,553 DEBUG (0.000) BEGIN; args=None
+2020-08-01 08:08:54,559 DEBUG CREATE TABLE "new__auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NULL, "is_superuser" bool NOT NULL, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(254) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "username" varchar(30) NOT NULL UNIQUE); (params None)
+2020-08-01 08:08:54,560 DEBUG (0.000) CREATE TABLE "new__auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NULL, "is_superuser" bool NOT NULL, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(254) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "username" varchar(30) NOT NULL UNIQUE); args=None
+2020-08-01 08:08:54,560 DEBUG INSERT INTO "new__auth_user" ("id", "password", "last_login", "is_superuser", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "username") SELECT "id", "password", "last_login", "is_superuser", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "username" FROM "auth_user"; (params ())
+2020-08-01 08:08:54,560 DEBUG (0.000) INSERT INTO "new__auth_user" ("id", "password", "last_login", "is_superuser", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "username") SELECT "id", "password", "last_login", "is_superuser", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "username" FROM "auth_user"; args=()
+2020-08-01 08:08:54,560 DEBUG DROP TABLE "auth_user"; (params ())
+2020-08-01 08:08:54,560 DEBUG (0.000) DROP TABLE "auth_user"; args=()
+2020-08-01 08:08:54,561 DEBUG ALTER TABLE "new__auth_user" RENAME TO "auth_user"; (params ())
+2020-08-01 08:08:54,562 DEBUG (0.001) ALTER TABLE "new__auth_user" RENAME TO "auth_user"; args=()
+2020-08-01 08:08:54,562 DEBUG (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-08-01 08:08:54,562 DEBUG (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0007_alter_validators_add_error_messages', '2020-08-01 08:08:54.562452'); args=['auth', '0007_alter_validators_add_error_messages', '2020-08-01 08:08:54.562452']
+2020-08-01 08:08:54,562 DEBUG (0.000) PRAGMA foreign_key_check; args=None
+2020-08-01 08:08:54,563 DEBUG (0.000) PRAGMA foreign_keys = ON; args=None
+2020-08-01 08:08:54,563 DEBUG (0.000) PRAGMA foreign_keys = OFF; args=None
+2020-08-01 08:08:54,571 DEBUG (0.000) PRAGMA foreign_keys; args=None
+2020-08-01 08:08:54,571 DEBUG (0.000) BEGIN; args=None
+2020-08-01 08:08:54,578 DEBUG CREATE TABLE "new__auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NULL, "is_superuser" bool NOT NULL, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(254) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "username" varchar(150) NOT NULL UNIQUE); (params None)
+2020-08-01 08:08:54,578 DEBUG (0.000) CREATE TABLE "new__auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NULL, "is_superuser" bool NOT NULL, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(254) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "username" varchar(150) NOT NULL UNIQUE); args=None
+2020-08-01 08:08:54,578 DEBUG INSERT INTO "new__auth_user" ("id", "password", "last_login", "is_superuser", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "username") SELECT "id", "password", "last_login", "is_superuser", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "username" FROM "auth_user"; (params ())
+2020-08-01 08:08:54,578 DEBUG (0.000) INSERT INTO "new__auth_user" ("id", "password", "last_login", "is_superuser", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "username") SELECT "id", "password", "last_login", "is_superuser", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "username" FROM "auth_user"; args=()
+2020-08-01 08:08:54,579 DEBUG DROP TABLE "auth_user"; (params ())
+2020-08-01 08:08:54,579 DEBUG (0.000) DROP TABLE "auth_user"; args=()
+2020-08-01 08:08:54,579 DEBUG ALTER TABLE "new__auth_user" RENAME TO "auth_user"; (params ())
+2020-08-01 08:08:54,580 DEBUG (0.001) ALTER TABLE "new__auth_user" RENAME TO "auth_user"; args=()
+2020-08-01 08:08:54,580 DEBUG (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-08-01 08:08:54,580 DEBUG (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0008_alter_user_username_max_length', '2020-08-01 08:08:54.580512'); args=['auth', '0008_alter_user_username_max_length', '2020-08-01 08:08:54.580512']
+2020-08-01 08:08:54,580 DEBUG (0.000) PRAGMA foreign_key_check; args=None
+2020-08-01 08:08:54,581 DEBUG (0.000) PRAGMA foreign_keys = ON; args=None
+2020-08-01 08:08:54,581 DEBUG (0.000) PRAGMA foreign_keys = OFF; args=None
+2020-08-01 08:08:54,581 DEBUG (0.000) PRAGMA foreign_keys; args=None
+2020-08-01 08:08:54,581 DEBUG (0.000) BEGIN; args=None
+2020-08-01 08:08:54,587 DEBUG CREATE TABLE "new__auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NULL, "is_superuser" bool NOT NULL, "username" varchar(150) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "email" varchar(254) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "last_name" varchar(150) NOT NULL); (params None)
+2020-08-01 08:08:54,588 DEBUG (0.000) CREATE TABLE "new__auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NULL, "is_superuser" bool NOT NULL, "username" varchar(150) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "email" varchar(254) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "last_name" varchar(150) NOT NULL); args=None
+2020-08-01 08:08:54,588 DEBUG INSERT INTO "new__auth_user" ("id", "password", "last_login", "is_superuser", "username", "first_name", "email", "is_staff", "is_active", "date_joined", "last_name") SELECT "id", "password", "last_login", "is_superuser", "username", "first_name", "email", "is_staff", "is_active", "date_joined", "last_name" FROM "auth_user"; (params ())
+2020-08-01 08:08:54,588 DEBUG (0.000) INSERT INTO "new__auth_user" ("id", "password", "last_login", "is_superuser", "username", "first_name", "email", "is_staff", "is_active", "date_joined", "last_name") SELECT "id", "password", "last_login", "is_superuser", "username", "first_name", "email", "is_staff", "is_active", "date_joined", "last_name" FROM "auth_user"; args=()
+2020-08-01 08:08:54,588 DEBUG DROP TABLE "auth_user"; (params ())
+2020-08-01 08:08:54,588 DEBUG (0.000) DROP TABLE "auth_user"; args=()
+2020-08-01 08:08:54,589 DEBUG ALTER TABLE "new__auth_user" RENAME TO "auth_user"; (params ())
+2020-08-01 08:08:54,589 DEBUG (0.001) ALTER TABLE "new__auth_user" RENAME TO "auth_user"; args=()
+2020-08-01 08:08:54,590 DEBUG (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-08-01 08:08:54,590 DEBUG (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0009_alter_user_last_name_max_length', '2020-08-01 08:08:54.590407'); args=['auth', '0009_alter_user_last_name_max_length', '2020-08-01 08:08:54.590407']
+2020-08-01 08:08:54,590 DEBUG (0.000) PRAGMA foreign_key_check; args=None
+2020-08-01 08:08:54,591 DEBUG (0.000) PRAGMA foreign_keys = ON; args=None
+2020-08-01 08:08:54,591 DEBUG (0.000) PRAGMA foreign_keys = OFF; args=None
+2020-08-01 08:08:54,591 DEBUG (0.000) PRAGMA foreign_keys; args=None
+2020-08-01 08:08:54,592 DEBUG (0.000) BEGIN; args=None
+2020-08-01 08:08:54,597 DEBUG CREATE TABLE "new__auth_group" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(150) NOT NULL UNIQUE); (params None)
+2020-08-01 08:08:54,598 DEBUG (0.000) CREATE TABLE "new__auth_group" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(150) NOT NULL UNIQUE); args=None
+2020-08-01 08:08:54,598 DEBUG INSERT INTO "new__auth_group" ("id", "name") SELECT "id", "name" FROM "auth_group"; (params ())
+2020-08-01 08:08:54,598 DEBUG (0.000) INSERT INTO "new__auth_group" ("id", "name") SELECT "id", "name" FROM "auth_group"; args=()
+2020-08-01 08:08:54,598 DEBUG DROP TABLE "auth_group"; (params ())
+2020-08-01 08:08:54,598 DEBUG (0.000) DROP TABLE "auth_group"; args=()
+2020-08-01 08:08:54,598 DEBUG ALTER TABLE "new__auth_group" RENAME TO "auth_group"; (params ())
+2020-08-01 08:08:54,599 DEBUG (0.001) ALTER TABLE "new__auth_group" RENAME TO "auth_group"; args=()
+2020-08-01 08:08:54,599 DEBUG (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-08-01 08:08:54,600 DEBUG (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0010_alter_group_name_max_length', '2020-08-01 08:08:54.599924'); args=['auth', '0010_alter_group_name_max_length', '2020-08-01 08:08:54.599924']
+2020-08-01 08:08:54,600 DEBUG (0.000) PRAGMA foreign_key_check; args=None
+2020-08-01 08:08:54,600 DEBUG (0.000) PRAGMA foreign_keys = ON; args=None
+2020-08-01 08:08:54,601 DEBUG (0.000) PRAGMA foreign_keys = OFF; args=None
+2020-08-01 08:08:54,601 DEBUG (0.000) PRAGMA foreign_keys; args=None
+2020-08-01 08:08:54,601 DEBUG (0.000) BEGIN; args=None
+2020-08-01 08:08:54,607 DEBUG (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-08-01 08:08:54,607 DEBUG (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0011_update_proxy_permissions', '2020-08-01 08:08:54.607436'); args=['auth', '0011_update_proxy_permissions', '2020-08-01 08:08:54.607436']
+2020-08-01 08:08:54,607 DEBUG (0.000) PRAGMA foreign_key_check; args=None
+2020-08-01 08:08:54,608 DEBUG (0.000) PRAGMA foreign_keys = ON; args=None
+2020-08-01 08:08:54,608 DEBUG (0.000) PRAGMA foreign_keys = OFF; args=None
+2020-08-01 08:08:54,608 DEBUG (0.000) PRAGMA foreign_keys; args=None
+2020-08-01 08:08:54,608 DEBUG (0.000) BEGIN; args=None
+2020-08-01 08:08:54,609 DEBUG CREATE TABLE "django_session" ("session_key" varchar(40) NOT NULL PRIMARY KEY, "session_data" text NOT NULL, "expire_date" datetime NOT NULL); (params None)
+2020-08-01 08:08:54,610 DEBUG (0.000) CREATE TABLE "django_session" ("session_key" varchar(40) NOT NULL PRIMARY KEY, "session_data" text NOT NULL, "expire_date" datetime NOT NULL); args=None
+2020-08-01 08:08:54,610 DEBUG (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-08-01 08:08:54,611 DEBUG (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('sessions', '0001_initial', '2020-08-01 08:08:54.610813'); args=['sessions', '0001_initial', '2020-08-01 08:08:54.610813']
+2020-08-01 08:08:54,611 DEBUG (0.000) PRAGMA foreign_key_check; args=None
+2020-08-01 08:08:54,611 DEBUG CREATE INDEX "django_session_expire_date_a5c62663" ON "django_session" ("expire_date"); (params ())
+2020-08-01 08:08:54,611 DEBUG (0.000) CREATE INDEX "django_session_expire_date_a5c62663" ON "django_session" ("expire_date"); args=()
+2020-08-01 08:08:54,612 DEBUG (0.000) PRAGMA foreign_keys = ON; args=None
+2020-08-01 08:08:54,612 DEBUG (0.000) PRAGMA foreign_keys = OFF; args=None
+2020-08-01 08:08:54,612 DEBUG (0.000) PRAGMA foreign_keys; args=None
+2020-08-01 08:08:54,612 DEBUG (0.000) BEGIN; args=None
+2020-08-01 08:08:54,613 DEBUG CREATE TABLE "stores" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "description" varchar(2000) NOT NULL, "address" varchar(100) NOT NULL, "phone_number" varchar(20) NOT NULL); (params None)
+2020-08-01 08:08:54,613 DEBUG (0.000) CREATE TABLE "stores" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "description" varchar(2000) NOT NULL, "address" varchar(100) NOT NULL, "phone_number" varchar(20) NOT NULL); args=None
+2020-08-01 08:08:54,615 DEBUG CREATE TABLE "menus" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "price" integer NOT NULL, "store_id_id" integer NULL REFERENCES "stores" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
+2020-08-01 08:08:54,615 DEBUG (0.000) CREATE TABLE "menus" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "price" integer NOT NULL, "store_id_id" integer NULL REFERENCES "stores" ("id") DEFERRABLE INITIALLY DEFERRED); args=None
+2020-08-01 08:08:54,615 DEBUG (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-08-01 08:08:54,616 DEBUG (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('store', '0001_initial', '2020-08-01 08:08:54.616068'); args=['store', '0001_initial', '2020-08-01 08:08:54.616068']
+2020-08-01 08:08:54,616 DEBUG (0.000) PRAGMA foreign_key_check; args=None
+2020-08-01 08:08:54,616 DEBUG CREATE INDEX "menus_store_id_id_b022385c" ON "menus" ("store_id_id"); (params ())
+2020-08-01 08:08:54,616 DEBUG (0.000) CREATE INDEX "menus_store_id_id_b022385c" ON "menus" ("store_id_id"); args=()
+2020-08-01 08:08:54,617 DEBUG (0.000) PRAGMA foreign_keys = ON; args=None
+2020-08-01 08:08:54,617 DEBUG (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-08-01 08:08:54,617 DEBUG (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2020-08-01 08:08:54,624 DEBUG (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',)
+2020-08-01 08:08:54,625 DEBUG (0.000) BEGIN; args=None
+2020-08-01 08:08:54,625 DEBUG (0.000) INSERT INTO "django_content_type" ("app_label", "model") SELECT 'admin', 'logentry'; args=('admin', 'logentry')
+2020-08-01 08:08:54,626 DEBUG (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'admin' AND "django_content_type"."model" = 'logentry'); args=('admin', 'logentry')
+2020-08-01 08:08:54,628 DEBUG (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (1) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(1,)
+2020-08-01 08:08:54,628 DEBUG (0.000) BEGIN; args=None
+2020-08-01 08:08:54,629 DEBUG (0.000) INSERT INTO "auth_permission" ("name", "content_type_id", "codename") SELECT 'Can add log entry', 1, 'add_logentry' UNION ALL SELECT 'Can change log entry', 1, 'change_logentry' UNION ALL SELECT 'Can delete log entry', 1, 'delete_logentry' UNION ALL SELECT 'Can view log entry', 1, 'view_logentry'; args=('Can add log entry', 1, 'add_logentry', 'Can change log entry', 1, 'change_logentry', 'Can delete log entry', 1, 'delete_logentry', 'Can view log entry', 1, 'view_logentry')
+2020-08-01 08:08:54,630 DEBUG (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',)
+2020-08-01 08:08:54,630 DEBUG (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',)
+2020-08-01 08:08:54,631 DEBUG (0.000) BEGIN; args=None
+2020-08-01 08:08:54,631 DEBUG (0.000) INSERT INTO "django_content_type" ("app_label", "model") SELECT 'auth', 'permission' UNION ALL SELECT 'auth', 'group' UNION ALL SELECT 'auth', 'user'; args=('auth', 'permission', 'auth', 'group', 'auth', 'user')
+2020-08-01 08:08:54,632 DEBUG (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'permission'); args=('auth', 'permission')
+2020-08-01 08:08:54,633 DEBUG (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'group'); args=('auth', 'group')
+2020-08-01 08:08:54,633 DEBUG (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'user'); args=('auth', 'user')
+2020-08-01 08:08:54,634 DEBUG (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (2, 3, 4) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(2, 3, 4)
+2020-08-01 08:08:54,635 DEBUG (0.000) BEGIN; args=None
+2020-08-01 08:08:54,636 DEBUG (0.000) INSERT INTO "auth_permission" ("name", "content_type_id", "codename") SELECT 'Can add permission', 2, 'add_permission' UNION ALL SELECT 'Can change permission', 2, 'change_permission' UNION ALL SELECT 'Can delete permission', 2, 'delete_permission' UNION ALL SELECT 'Can view permission', 2, 'view_permission' UNION ALL SELECT 'Can add group', 3, 'add_group' UNION ALL SELECT 'Can change group', 3, 'change_group' UNION ALL SELECT 'Can delete group', 3, 'delete_group' UNION ALL SELECT 'Can view group', 3, 'view_group' UNION ALL SELECT 'Can add user', 4, 'add_user' UNION ALL SELECT 'Can change user', 4, 'change_user' UNION ALL SELECT 'Can delete user', 4, 'delete_user' UNION ALL SELECT 'Can view user', 4, 'view_user'; args=('Can add permission', 2, 'add_permission', 'Can change permission', 2, 'change_permission', 'Can delete permission', 2, 'delete_permission', 'Can view permission', 2, 'view_permission', 'Can add group', 3, 'add_group', 'Can change group', 3, 'change_group', 'Can delete group', 3, 'delete_group', 'Can view group', 3, 'view_group', 'Can add user', 4, 'add_user', 'Can change user', 4, 'change_user', 'Can delete user', 4, 'delete_user', 'Can view user', 4, 'view_user')
+2020-08-01 08:08:54,637 DEBUG (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',)
+2020-08-01 08:08:54,637 DEBUG (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',)
+2020-08-01 08:08:54,637 DEBUG (0.000) BEGIN; args=None
+2020-08-01 08:08:54,638 DEBUG (0.000) INSERT INTO "django_content_type" ("app_label", "model") SELECT 'contenttypes', 'contenttype'; args=('contenttypes', 'contenttype')
+2020-08-01 08:08:54,639 DEBUG (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'contenttypes' AND "django_content_type"."model" = 'contenttype'); args=('contenttypes', 'contenttype')
+2020-08-01 08:08:54,640 DEBUG (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (5) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(5,)
+2020-08-01 08:08:54,640 DEBUG (0.000) BEGIN; args=None
+2020-08-01 08:08:54,640 DEBUG (0.000) INSERT INTO "auth_permission" ("name", "content_type_id", "codename") SELECT 'Can add content type', 5, 'add_contenttype' UNION ALL SELECT 'Can change content type', 5, 'change_contenttype' UNION ALL SELECT 'Can delete content type', 5, 'delete_contenttype' UNION ALL SELECT 'Can view content type', 5, 'view_contenttype'; args=('Can add content type', 5, 'add_contenttype', 'Can change content type', 5, 'change_contenttype', 'Can delete content type', 5, 'delete_contenttype', 'Can view content type', 5, 'view_contenttype')
+2020-08-01 08:08:54,641 DEBUG (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',)
+2020-08-01 08:08:54,642 DEBUG (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',)
+2020-08-01 08:08:54,642 DEBUG (0.000) BEGIN; args=None
+2020-08-01 08:08:54,642 DEBUG (0.000) INSERT INTO "django_content_type" ("app_label", "model") SELECT 'sessions', 'session'; args=('sessions', 'session')
+2020-08-01 08:08:54,643 DEBUG (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'sessions' AND "django_content_type"."model" = 'session'); args=('sessions', 'session')
+2020-08-01 08:08:54,644 DEBUG (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (6) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(6,)
+2020-08-01 08:08:54,644 DEBUG (0.000) BEGIN; args=None
+2020-08-01 08:08:54,645 DEBUG (0.000) INSERT INTO "auth_permission" ("name", "content_type_id", "codename") SELECT 'Can add session', 6, 'add_session' UNION ALL SELECT 'Can change session', 6, 'change_session' UNION ALL SELECT 'Can delete session', 6, 'delete_session' UNION ALL SELECT 'Can view session', 6, 'view_session'; args=('Can add session', 6, 'add_session', 'Can change session', 6, 'change_session', 'Can delete session', 6, 'delete_session', 'Can view session', 6, 'view_session')
+2020-08-01 08:08:54,646 DEBUG (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',)
+2020-08-01 08:08:54,646 DEBUG (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'store'; args=('store',)
+2020-08-01 08:08:54,646 DEBUG (0.000) BEGIN; args=None
+2020-08-01 08:08:54,647 DEBUG (0.000) INSERT INTO "django_content_type" ("app_label", "model") SELECT 'store', 'store' UNION ALL SELECT 'store', 'menu'; args=('store', 'store', 'store', 'menu')
+2020-08-01 08:08:54,648 DEBUG (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'store' AND "django_content_type"."model" = 'store'); args=('store', 'store')
+2020-08-01 08:08:54,648 DEBUG (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'store' AND "django_content_type"."model" = 'menu'); args=('store', 'menu')
+2020-08-01 08:08:54,649 DEBUG (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (8, 7) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(8, 7)
+2020-08-01 08:08:54,649 DEBUG (0.000) BEGIN; args=None
+2020-08-01 08:08:54,650 DEBUG (0.000) INSERT INTO "auth_permission" ("name", "content_type_id", "codename") SELECT 'Can add store', 7, 'add_store' UNION ALL SELECT 'Can change store', 7, 'change_store' UNION ALL SELECT 'Can delete store', 7, 'delete_store' UNION ALL SELECT 'Can view store', 7, 'view_store' UNION ALL SELECT 'Can add menu', 8, 'add_menu' UNION ALL SELECT 'Can change menu', 8, 'change_menu' UNION ALL SELECT 'Can delete menu', 8, 'delete_menu' UNION ALL SELECT 'Can view menu', 8, 'view_menu'; args=('Can add store', 7, 'add_store', 'Can change store', 7, 'change_store', 'Can delete store', 7, 'delete_store', 'Can view store', 7, 'view_store', 'Can add menu', 8, 'add_menu', 'Can change menu', 8, 'change_menu', 'Can delete menu', 8, 'delete_menu', 'Can view menu', 8, 'view_menu')
+2020-08-01 08:08:54,651 DEBUG (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'store'; args=('store',)
+2020-08-01 08:09:03,324 DEBUG (0.002) INSERT INTO "stores" ("name", "description", "address", "phone_number") VALUES ('세라즈피자펍', '뉴질랜드 사장님이 만드시는 수제피자와 맛있는 수제맥주 14가지 온탭', '서울 금천구 가산디지털1로 168', '010- 6688-0415'); args=['세라즈피자펍', '뉴질랜드 사장님이 만드시는 수제피자와 맛있는 수제맥주 14가지 온탭', '서울 금천구 가산디지털1로 168', '010- 6688-0415']
+2020-08-01 08:09:03,326 DEBUG (0.001) INSERT INTO "stores" ("name", "description", "address", "phone_number") VALUES ('더제이케이키친박스 가산디지털점', '안녕하세요.^^ 가산디지털단지의 소문난 파스타 맛집 The JK 키친박스 입니다.  맛,   퀄리티, 부담없는 가격까지!  가성비 최고의 파스타 맛집 키친박스에 놀러오세요 :) 여러분을 환영합니다~!^^ ', '서울 금천구 가산디지털1로 145', '02-2624-0008'); args=['더제이케이키친박스 가산디지털점', '안녕하세요.^^ 가산디지털단지의 소문난 파스타 맛집 The JK 키친박스 입니다.  맛,   퀄리티, 부담없는 가격까지!  가성비 최고의 파스타 맛집 키친박스에 놀러오세요 :) 여러분을 환영합니다~!^^ ', '서울 금천구 가산디지털1로 145', '02-2624-0008']
+2020-08-01 08:09:03,327 DEBUG (0.001) INSERT INTO "stores" ("name", "description", "address", "phone_number") VALUES ('말뚝곱창', '가산 맛집 말뚝 곱창', '서울 금천구 가산디지털1로 168', '02-2026-0108'); args=['말뚝곱창', '가산 맛집 말뚝 곱창', '서울 금천구 가산디지털1로 168', '02-2026-0108']
+2020-08-01 08:09:03,329 DEBUG (0.001) INSERT INTO "stores" ("name", "description", "address", "phone_number") VALUES ('동남집', '푸짐한 양의 양지곰탕과 만두', '서울 금천구 가산디지털1로 149', '02-830-8834'); args=['동남집', '푸짐한 양의 양지곰탕과 만두', '서울 금천구 가산디지털1로 149', '02-830-8834']
+2020-08-01 08:09:03,330 DEBUG (0.001) INSERT INTO "stores" ("name", "description", "address", "phone_number") VALUES ('스시초이', '초밥, 롤', '서울 금천구 가산디지털1로 171', '02-861-5519'); args=['스시초이', '초밥, 롤', '서울 금천구 가산디지털1로 171', '02-861-5519']
+2020-08-01 08:09:03,331 DEBUG (0.001) INSERT INTO "stores" ("name", "description", "address", "phone_number") VALUES ('써브웨이', '단체 전화주문 환영 20만원이상 배달서비스 (사전예약필수) 주차이용 가능', '서울 금천구 가산디지털1로 165  가산비지니스센터 102호', '1544-1852'); args=['써브웨이', '단체 전화주문 환영 20만원이상 배달서비스 (사전예약필수) 주차이용 가능', '서울 금천구 가산디지털1로 165  가산비지니스센터 102호', '1544-1852']
+2020-08-01 08:09:03,332 DEBUG (0.001) INSERT INTO "stores" ("name", "description", "address", "phone_number") VALUES ('팔람까오', '가산동의 작은 태국 음식점입니다 고객님의 요구에 맞춰 최선을 다하고 있습니다', '서울 금천구 서부샛길 606 대성디폴리스 2층 217호', '02-861-8420'); args=['팔람까오', '가산동의 작은 태국 음식점입니다 고객님의 요구에 맞춰 최선을 다하고 있습니다', '서울 금천구 서부샛길 606 대성디폴리스 2층 217호', '02-861-8420']
+2020-08-01 08:09:03,333 DEBUG (0.001) INSERT INTO "stores" ("name", "description", "address", "phone_number") VALUES ('먹쉬돈나', '삼청동 즉석떡볶이로 유명한 먹쉬돈나 가산점입니다. 넓고 쾌적한 매장으로 단체 손님이나 모임을 하기에도     매우 좋습니다.', '서울 금천구 가산디지털1로 186 B1층', '02-865-8089'); args=['먹쉬돈나', '삼청동 즉석떡볶이로 유명한 먹쉬돈나 가산점입니다. 넓고 쾌적한 매장으로 단체 손님이나 모임을 하기에도     매우 좋습니다.', '서울 금천구 가산디지털1로 186 B1층', '02-865-8089']
+2020-08-01 08:09:03,333 DEBUG (0.001) INSERT INTO "stores" ("name", "description", "address", "phone_number") VALUES ('망향비빔국수', '쫄깃한 면발과 시원한 야채로 만들어진 국수를 깨끗매장 즐기실 수 있습니다', '서울 금천구 가산디지털1로 186 제이플라츠', '02-866-3575'); args=['망향비빔국수', '쫄깃한 면발과 시원한 야채로 만들어진 국수를 깨끗매장 즐기실 수 있습니다', '서울 금천구 가산디지털1로 186 제이플라츠', '02-866-3575']
+2020-08-01 08:09:03,334 DEBUG (0.000) INSERT INTO "stores" ("name", "description", "address", "phone_number") VALUES ('에그스탑', '에그스탑은 영양이 풍부한 달걀을 이용한 Bun toast 와 최상의 커피를 누구나 쉽게 즐길 수 있는 토스트카페   브랜드입니다.', '서울 금천구 가산디지털1로 171 SK V1빌딩 1층', '02-6244-8229'); args=['에그스탑', '에그스탑은 영양이 풍부한 달걀을 이용한 Bun toast 와 최상의 커피를 누구나 쉽게 즐길 수 있는 토스트카페   브랜드입니다.', '서울 금천구 가산디지털1로 171 SK V1빌딩 1층', '02-6244-8229']
+2020-08-01 08:09:03,335 DEBUG (0.001) INSERT INTO "stores" ("name", "description", "address", "phone_number") VALUES ('슬로우앤티', '저희 슬로우앤티는 slow and T = 여유로움에 T를 더한다.... 라는 의미로 여유로움에 Time. Tea. Travel. Tree. Table이 함께 한다는 뜻입니다.', '서울 금천구 가산디지털1로 142', '02-2067-1293'); args=['슬로우앤티', '저희 슬로우앤티는 slow and T = 여유로움에 T를 더한다.... 라는 의미로 여유로움에 Time. Tea. Travel. Tree. Table이 함께 한다는 뜻입니다.', '서울 금천구 가산디지털1로 142', '02-2067-1293']
+2020-08-01 08:09:03,336 DEBUG (0.001) INSERT INTO "stores" ("name", "description", "address", "phone_number") VALUES ('여신족발', '과일과 한약재 소스 넣어 매일 삶아낸 싱싱한 족발이 인기인 곳입니다. 매일 삶은 족발을 다 소진하기 위해 정해진 양만을 삶아내기 때문에 언제나 당일 만든 족발을 맛볼 수 있는 곳인데요, 족발과 함께 제공되는 부추 겉절이와 양파고추절임, 무 생채 등의 곁들임 반찬도 반응이 좋은 편입니다. 새싹채소와 양배추, 오이, 상추 등이 들어간 쟁반 국수도 많이 찾는 메뉴지요.', '서울 금천구 벚꽃로38길 21', '02-865-9244'); args=['여신족발', '과일과 한약재 소스 넣어 매일 삶아낸 싱싱한 족발이 인기인 곳입니다. 매일 삶은 족발을 다 소진하기 위해 정해진 양만을 삶아내기 때문에 언제나 당일 만든 족발을 맛볼 수 있는 곳인데요, 족발과 함께 제공되는 부추 겉절이와 양파고추절임, 무 생채 등의 곁들임 반찬도 반응이 좋은 편입니다. 새싹채소와 양배추, 오이, 상추 등이 들어간 쟁반 국수도 많이 찾는 메뉴지요.', '서울 금천구 벚꽃로38길 21', '02-865-9244']
+2020-08-01 08:09:03,337 DEBUG (0.001) INSERT INTO "stores" ("name", "description", "address", "phone_number") VALUES ('놀란치킨', '국내산 냉장육만을 사용하여 신선하고 100% 국내산 카놀라유만 고집하여 맛있습니다.', '서울 금천구 가산디지털1로 171', '02-6244-8877'); args=['놀란치킨', '국내산 냉장육만을 사용하여 신선하고 100% 국내산 카놀라유만 고집하여 맛있습니다.', '서울 금천구 가산디지털1로 171', '02-6244-8877']
+2020-08-01 08:09:03,337 DEBUG (0.000) INSERT INTO "stores" ("name", "description", "address", "phone_number") VALUES ('로', '단체석, 주차, 예약, 무선 인터넷, 남/녀 화장실 구분', '서울 금천구 디지털로9길 47', '02-2025-3224'); args=['로', '단체석, 주차, 예약, 무선 인터넷, 남/녀 화장실 구분', '서울 금천구 디지털로9길 47', '02-2025-3224']
+2020-08-01 08:09:03,339 DEBUG (0.001) INSERT INTO "stores" ("name", "description", "address", "phone_number") VALUES ('월천삼계탕', '몸에 좋은 12가지 한약재를 넣어 우려낸 한약물에 잘 손질된 450g 삼계용 영계닭을 넣고 익혀낸 후 다시 뚝배기에 담아 찹쌀, 인삼, 마늘, 은행, 대추, 녹두와 함께 정성껏 끓여 보약 한재라는 마음으로 내어드립니다.', '서울 금천구 가산디지털1로 171', '02-6244-8787'); args=['월천삼계탕', '몸에 좋은 12가지 한약재를 넣어 우려낸 한약물에 잘 손질된 450g 삼계용 영계닭을 넣고 익혀낸 후 다시 뚝배기에 담아 찹쌀, 인삼, 마늘, 은행, 대추, 녹두와 함께 정성껏 끓여 보약 한재라는 마음으로 내어드립니다.', '서울 금천구 가산디지털1로 171', '02-6244-8787']
+2020-08-01 08:09:03,339 DEBUG (0.001) INSERT INTO "stores" ("name", "description", "address", "phone_number") VALUES ('남다른감자탕', '남다른감자탕 가산디지털역점입니다.', '서울 금천구 디지털로9길 99', '02-837-2110'); args=['남다른감자탕', '남다른감자탕 가산디지털역점입니다.', '서울 금천구 디지털로9길 99', '02-837-2110']
+2020-08-01 08:09:03,340 DEBUG (0.001) INSERT INTO "stores" ("name", "description", "address", "phone_number") VALUES ('가츠나베1.186', '가츠나베 1.186은 체인점이 아닌 한국브랜드 본점입니다', '서울 금천구 가산디지털1로 186', '02-2028-5335'); args=['가츠나베1.186', '가츠나베 1.186은 체인점이 아닌 한국브랜드 본점입니다', '서울 금천구 가산디지털1로 186', '02-2028-5335']
+2020-08-01 08:09:03,341 DEBUG (0.001) INSERT INTO "stores" ("name", "description", "address", "phone_number") VALUES ('스시히또', '지셰프 만의 특별한 일식 코스요리, 오마카세로 오감만족 즐거운 자리를 만들어드리겠습니다.', '서울 금천구 벚꽃로 286', '02-6953-0105'); args=['스시히또', '지셰프 만의 특별한 일식 코스요리, 오마카세로 오감만족 즐거운 자리를 만들어드리겠습니다.', '서울 금천구 벚꽃로 286', '02-6953-0105']
+2020-08-01 08:09:03,342 DEBUG (0.001) INSERT INTO "stores" ("name", "description", "address", "phone_number") VALUES ('콘타이', '태국보다 더 맛있는 태국음식점 "콘타이"는 전국 모든 지점이 직영점으로 운영되며 2017년 ~18년 2년 연속 S-partners 클럽으로 선정 되었습니다.', '서울 금천구 벚꽃로 266', '02-2067-3845'); args=['콘타이', '태국보다 더 맛있는 태국음식점 "콘타이"는 전국 모든 지점이 직영점으로 운영되며 2017년 ~18년 2년 연속 S-partners 클럽으로 선정 되었습니다.', '서울 금천구 벚꽃로 266', '02-2067-3845']
+2020-08-01 08:09:03,343 DEBUG (0.001) INSERT INTO "stores" ("name", "description", "address", "phone_number") VALUES ('뚱스분식', '만두가 수제입니다', '서울 금천구 가산디지털1로 186', '02-2028-5757'); args=['뚱스분식', '만두가 수제입니다', '서울 금천구 가산디지털1로 186', '02-2028-5757']
+2020-08-01 08:09:03,344 DEBUG (0.001) INSERT INTO "stores" ("name", "description", "address", "phone_number") VALUES ('마라일품훠궈.마라탕', '단체석, 주차, 포장, 예약, 무선 인터넷, 남/녀 화장실 구분', '서울 금천구 벚꽃로 298', '02-863-7077'); args=['마라일품훠궈.마라탕', '단체석, 주차, 포장, 예약, 무선 인터넷, 남/녀 화장실 구분', '서울 금천구 벚꽃로 298', '02-863-7077']
+2020-08-01 08:09:03,345 DEBUG (0.001) INSERT INTO "stores" ("name", "description", "address", "phone_number") VALUES ('강촌', '가산디지털단지역 14년 전통 유황오리 누룽지 백숙 맛집입니다. 대표메뉴인 유황오리 누룽지백숙은 여분으로 해놓지만 여분이 다 소진됐을경우 40분가량 기다리셔야 될수도 있으니 되도록이면 미리 예약 후 방문해주세요.', '서울 금천구 벚꽃로42길 3', '02-853-5532'); args=['강촌', '가산디지털단지역 14년 전통 유황오리 누룽지 백숙 맛집입니다. 대표메뉴인 유황오리 누룽지백숙은 여분으로 해놓지만 여분이 다 소진됐을경우 40분가량 기다리셔야 될수도 있으니 되도록이면 미리 예약 후 방문해주세요.', '서울 금천구 벚꽃로42길 3', '02-853-5532']
+2020-08-01 08:09:03,346 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 1; args=(1,)
+2020-08-01 08:09:03,347 DEBUG (0.001) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (1, '피자 13인치', 19000); args=[1, '피자 13인치', 19000]
+2020-08-01 08:09:03,348 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 1; args=(1,)
+2020-08-01 08:09:03,348 DEBUG (0.001) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (1, '피자 18인치', 29000); args=[1, '피자 18인치', 29000]
+2020-08-01 08:09:03,349 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 1; args=(1,)
+2020-08-01 08:09:03,350 DEBUG (0.001) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (1, '국내 수제맥주', 6000); args=[1, '국내 수제맥주', 6000]
+2020-08-01 08:09:03,350 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 1; args=(1,)
+2020-08-01 08:09:03,351 DEBUG (0.001) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (1, '와인', 6500); args=[1, '와인', 6500]
+2020-08-01 08:09:03,351 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 1; args=(1,)
+2020-08-01 08:09:03,352 DEBUG (0.001) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (1, 'Coke', 3000); args=[1, 'Coke', 3000]
+2020-08-01 08:09:03,353 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 2; args=(2,)
+2020-08-01 08:09:03,354 DEBUG (0.001) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (2, '샐러드', 7900); args=[2, '샐러드', 7900]
+2020-08-01 08:09:03,354 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 2; args=(2,)
+2020-08-01 08:09:03,355 DEBUG (0.001) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (2, '피자', 9900); args=[2, '피자', 9900]
+2020-08-01 08:09:03,356 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 2; args=(2,)
+2020-08-01 08:09:03,357 DEBUG (0.001) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (2, '빠네 파스타', 11900); args=[2, '빠네 파스타', 11900]
+2020-08-01 08:09:03,357 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 2; args=(2,)
+2020-08-01 08:09:03,358 DEBUG (0.001) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (2, '라이스', 8900); args=[2, '라이스', 8900]
+2020-08-01 08:09:03,358 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 3; args=(3,)
+2020-08-01 08:09:03,359 DEBUG (0.000) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (3, '모듬곱창', 16000); args=[3, '모듬곱창', 16000]
+2020-08-01 08:09:03,359 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 3; args=(3,)
+2020-08-01 08:09:03,360 DEBUG (0.000) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (3, '소곱창', 15000); args=[3, '소곱창', 15000]
+2020-08-01 08:09:03,360 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 3; args=(3,)
+2020-08-01 08:09:03,361 DEBUG (0.000) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (3, '소막창', 15000); args=[3, '소막창', 15000]
+2020-08-01 08:09:03,362 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 3; args=(3,)
+2020-08-01 08:09:03,362 DEBUG (0.000) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (3, '소대창', 15000); args=[3, '소대창', 15000]
+2020-08-01 08:09:03,363 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 3; args=(3,)
+2020-08-01 08:09:03,363 DEBUG (0.000) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (3, '볶음밥', 3000); args=[3, '볶음밥', 3000]
+2020-08-01 08:09:03,364 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 4; args=(4,)
+2020-08-01 08:09:03,364 DEBUG (0.000) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (4, '양지곰탕', 7000); args=[4, '양지곰탕', 7000]
+2020-08-01 08:09:03,365 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 4; args=(4,)
+2020-08-01 08:09:03,366 DEBUG (0.000) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (4, '왕갈비탕', 12000); args=[4, '왕갈비탕', 12000]
+2020-08-01 08:09:03,366 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 4; args=(4,)
+2020-08-01 08:09:03,367 DEBUG (0.000) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (4, '육개장', 7000); args=[4, '육개장', 7000]
+2020-08-01 08:09:03,367 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 4; args=(4,)
+2020-08-01 08:09:03,368 DEBUG (0.000) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (4, '특곰탕', 9000); args=[4, '특곰탕', 9000]
+2020-08-01 08:09:03,368 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 4; args=(4,)
+2020-08-01 08:09:03,369 DEBUG (0.000) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (4, '도가니탕', 13000); args=[4, '도가니탕', 13000]
+2020-08-01 08:09:03,369 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 5; args=(5,)
+2020-08-01 08:09:03,370 DEBUG (0.000) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (5, '모듬초밥', 15000); args=[5, '모듬초밥', 15000]
+2020-08-01 08:09:03,370 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 5; args=(5,)
+2020-08-01 08:09:03,371 DEBUG (0.000) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (5, '특초밥', 18000); args=[5, '특초밥', 18000]
+2020-08-01 08:09:03,371 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 5; args=(5,)
+2020-08-01 08:09:03,372 DEBUG (0.000) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (5, '알탕', 7000); args=[5, '알탕', 7000]
+2020-08-01 08:09:03,372 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 6; args=(6,)
+2020-08-01 08:09:03,373 DEBUG (0.000) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (6, '이탈리안 비엠티', 5200); args=[6, '이탈리안 비엠티', 5200]
+2020-08-01 08:09:03,374 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 6; args=(6,)
+2020-08-01 08:09:03,374 DEBUG (0.000) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (6, '써브웨이 클럽', 5700); args=[6, '써브웨이 클럽', 5700]
+2020-08-01 08:09:03,375 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 6; args=(6,)
+2020-08-01 08:09:03,375 DEBUG (0.000) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (6, '써브웨이 멜트', 5900); args=[6, '써브웨이 멜트', 5900]
+2020-08-01 08:09:03,376 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 7; args=(7,)
+2020-08-01 08:09:03,377 DEBUG (0.001) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (7, '소고기/매운닭쌀국수', 7000); args=[7, '소고기/매운닭쌀국수', 7000]
+2020-08-01 08:09:03,377 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 7; args=(7,)
+2020-08-01 08:09:03,378 DEBUG (0.000) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (7, '팟키마오', 10800); args=[7, '팟키마오', 10800]
+2020-08-01 08:09:03,378 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 7; args=(7,)
+2020-08-01 08:09:03,379 DEBUG (0.000) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (7, '톰양쌀국수', 10800); args=[7, '톰양쌀국수', 10800]
+2020-08-01 08:09:03,379 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 8; args=(8,)
+2020-08-01 08:09:03,380 DEBUG (0.000) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (8, '육해공떡볶이(2~3인분)', 20000); args=[8, '육해공떡볶이(2~3인분)', 20000]
+2020-08-01 08:09:03,380 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 8; args=(8,)
+2020-08-01 08:09:03,381 DEBUG (0.000) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (8, '치즈떡볶이', 5000); args=[8, '치즈떡볶이', 5000]
+2020-08-01 08:09:03,381 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 8; args=(8,)
+2020-08-01 08:09:03,382 DEBUG (0.000) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (8, '해물떡볶이', 5000); args=[8, '해물떡볶이', 5000]
+2020-08-01 08:09:03,383 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 9; args=(9,)
+2020-08-01 08:09:03,383 DEBUG (0.000) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (9, '비빔국수', 6000); args=[9, '비빔국수', 6000]
+2020-08-01 08:09:03,384 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 9; args=(9,)
+2020-08-01 08:09:03,384 DEBUG (0.000) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (9, '잔치국수', 6000); args=[9, '잔치국수', 6000]
+2020-08-01 08:09:03,385 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 9; args=(9,)
+2020-08-01 08:09:03,385 DEBUG (0.000) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (9, '떡만둣국', 6000); args=[9, '떡만둣국', 6000]
+2020-08-01 08:09:03,386 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 10; args=(10,)
+2020-08-01 08:09:03,387 DEBUG (0.000) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (10, '스크램블에그번토스트', 3000); args=[10, '스크램블에그번토스트', 3000]
+2020-08-01 08:09:03,387 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 10; args=(10,)
+2020-08-01 08:09:03,388 DEBUG (0.001) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (10, '스크램블에그번세트', 4000); args=[10, '스크램블에그번세트', 4000]
+2020-08-01 08:09:03,389 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 10; args=(10,)
+2020-08-01 08:09:03,390 DEBUG (0.001) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (10, '스크램블에그번콤보', 5500); args=[10, '스크램블에그번콤보', 5500]
+2020-08-01 08:09:03,390 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 11; args=(11,)
+2020-08-01 08:09:03,391 DEBUG (0.000) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (11, '그릴리아(구운야채)샐러드', 6900); args=[11, '그릴리아(구운야채)샐러드', 6900]
+2020-08-01 08:09:03,391 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 11; args=(11,)
+2020-08-01 08:09:03,392 DEBUG (0.000) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (11, '살루떼(건강이)샐러드', 6500); args=[11, '살루떼(건강이)샐러드', 6500]
+2020-08-01 08:09:03,392 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 11; args=(11,)
+2020-08-01 08:09:03,393 DEBUG (0.000) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (11, '챠오(햄앤치즈)샌드위치', 3900); args=[11, '챠오(햄앤치즈)샌드위치', 3900]
+2020-08-01 08:09:03,393 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 11; args=(11,)
+2020-08-01 08:09:03,394 DEBUG (0.001) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (11, '뽀요(닭가슴살)샐러드', 7300); args=[11, '뽀요(닭가슴살)샐러드', 7300]
+2020-08-01 08:09:03,395 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 12; args=(12,)
+2020-08-01 08:09:03,395 DEBUG (0.000) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (12, '족발 대', 38000); args=[12, '족발 대', 38000]
+2020-08-01 08:09:03,396 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 12; args=(12,)
+2020-08-01 08:09:03,397 DEBUG (0.000) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (12, '족발 중', 33000); args=[12, '족발 중', 33000]
+2020-08-01 08:09:03,397 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 12; args=(12,)
+2020-08-01 08:09:03,398 DEBUG (0.001) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (12, '족발 소', 28000); args=[12, '족발 소', 28000]
+2020-08-01 08:09:03,398 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 13; args=(13,)
+2020-08-01 08:09:03,399 DEBUG (0.001) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (13, '어니언치킨', 18000); args=[13, '어니언치킨', 18000]
+2020-08-01 08:09:03,400 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 13; args=(13,)
+2020-08-01 08:09:03,400 DEBUG (0.000) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (13, '갈릭소이치킨', 17000); args=[13, '갈릭소이치킨', 17000]
+2020-08-01 08:09:03,401 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 13; args=(13,)
+2020-08-01 08:09:03,402 DEBUG (0.001) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (13, '클래식치킨', 17000); args=[13, '클래식치킨', 17000]
+2020-08-01 08:09:03,402 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 13; args=(13,)
+2020-08-01 08:09:03,403 DEBUG (0.000) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (13, '마늘치킨', 17000); args=[13, '마늘치킨', 17000]
+2020-08-01 08:09:03,403 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 13; args=(13,)
+2020-08-01 08:09:03,404 DEBUG (0.001) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (13, '후라이드치킨', 16000); args=[13, '후라이드치킨', 16000]
+2020-08-01 08:09:03,404 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 14; args=(14,)
+2020-08-01 08:09:03,405 DEBUG (0.001) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (14, '목살, 항정살, 안갈비살', 14000); args=[14, '목살, 항정살, 안갈비살', 14000]
+2020-08-01 08:09:03,406 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 15; args=(15,)
+2020-08-01 08:09:03,406 DEBUG (0.000) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (15, '녹두한방삼계탕', 13000); args=[15, '녹두한방삼계탕', 13000]
+2020-08-01 08:09:03,407 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 15; args=(15,)
+2020-08-01 08:09:03,408 DEBUG (0.000) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (15, '녹전한방삼계탕', 18000); args=[15, '녹전한방삼계탕', 18000]
+2020-08-01 08:09:03,408 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 15; args=(15,)
+2020-08-01 08:09:03,409 DEBUG (0.001) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (15, '전복한방삼계탕', 16000); args=[15, '전복한방삼계탕', 16000]
+2020-08-01 08:09:03,410 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 15; args=(15,)
+2020-08-01 08:09:03,411 DEBUG (0.001) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (15, '국물 닭볶음탕', 9800); args=[15, '국물 닭볶음탕', 9800]
+2020-08-01 08:09:03,411 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 16; args=(16,)
+2020-08-01 08:09:03,412 DEBUG (0.000) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (16, '남자탕', 8000); args=[16, '남자탕', 8000]
+2020-08-01 08:09:03,412 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 16; args=(16,)
+2020-08-01 08:09:03,413 DEBUG (0.000) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (16, '남자와함께라면', 7000); args=[16, '남자와함께라면', 7000]
+2020-08-01 08:09:03,413 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 16; args=(16,)
+2020-08-01 08:09:03,414 DEBUG (0.001) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (16, '부대해장국', 9000); args=[16, '부대해장국', 9000]
+2020-08-01 08:09:03,414 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 17; args=(17,)
+2020-08-01 08:09:03,415 DEBUG (0.000) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (17, '김치가츠나베', 7500); args=[17, '김치가츠나베', 7500]
+2020-08-01 08:09:03,415 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 17; args=(17,)
+2020-08-01 08:09:03,416 DEBUG (0.000) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (17, '가츠나베', 7500); args=[17, '가츠나베', 7500]
+2020-08-01 08:09:03,416 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 17; args=(17,)
+2020-08-01 08:09:03,417 DEBUG (0.001) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (17, '돈까스카레', 7500); args=[17, '돈까스카레', 7500]
+2020-08-01 08:09:03,418 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 18; args=(18,)
+2020-08-01 08:09:03,419 DEBUG (0.001) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (18, '오마카세 A', 40000); args=[18, '오마카세 A', 40000]
+2020-08-01 08:09:03,419 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 18; args=(18,)
+2020-08-01 08:09:03,420 DEBUG (0.001) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (18, '오마카세 B', 60000); args=[18, '오마카세 B', 60000]
+2020-08-01 08:09:03,420 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 18; args=(18,)
+2020-08-01 08:09:03,421 DEBUG (0.001) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (18, '오마카세 C', 90000); args=[18, '오마카세 C', 90000]
+2020-08-01 08:09:03,422 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 18; args=(18,)
+2020-08-01 08:09:03,422 DEBUG (0.000) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (18, '특선스시', 30000); args=[18, '특선스시', 30000]
+2020-08-01 08:09:03,423 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 19; args=(19,)
+2020-08-01 08:09:03,424 DEBUG (0.000) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (19, '텃만꿍', 12000); args=[19, '텃만꿍', 12000]
+2020-08-01 08:09:03,424 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 19; args=(19,)
+2020-08-01 08:09:03,425 DEBUG (0.001) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (19, '뿌님팟퐁커리', 35000); args=[19, '뿌님팟퐁커리', 35000]
+2020-08-01 08:09:03,425 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 19; args=(19,)
+2020-08-01 08:09:03,426 DEBUG (0.001) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (19, '똠양꿍', 20000); args=[19, '똠양꿍', 20000]
+2020-08-01 08:09:03,427 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 20; args=(20,)
+2020-08-01 08:09:03,428 DEBUG (0.000) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (20, '뚱스왕만두', 5000); args=[20, '뚱스왕만두', 5000]
+2020-08-01 08:09:03,428 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 20; args=(20,)
+2020-08-01 08:09:03,429 DEBUG (0.000) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (20, '김치김밥', 3500); args=[20, '김치김밥', 3500]
+2020-08-01 08:09:03,429 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 20; args=(20,)
+2020-08-01 08:09:03,430 DEBUG (0.001) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (20, '참치김밥', 3500); args=[20, '참치김밥', 3500]
+2020-08-01 08:09:03,430 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 20; args=(20,)
+2020-08-01 08:09:03,431 DEBUG (0.001) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (20, '원조김밥', 2500); args=[20, '원조김밥', 2500]
+2020-08-01 08:09:03,432 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 21; args=(21,)
+2020-08-01 08:09:03,432 DEBUG (0.000) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (21, '훠궈무한리필', 17900); args=[21, '훠궈무한리필', 17900]
+2020-08-01 08:09:03,433 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 21; args=(21,)
+2020-08-01 08:09:03,434 DEBUG (0.000) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (21, '탕수육', 12000); args=[21, '탕수육', 12000]
+2020-08-01 08:09:03,434 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 21; args=(21,)
+2020-08-01 08:09:03,435 DEBUG (0.001) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (21, '마라룽샤', 30000); args=[21, '마라룽샤', 30000]
+2020-08-01 08:09:03,435 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 22; args=(22,)
+2020-08-01 08:09:03,436 DEBUG (0.000) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (22, '유황오리 누룽지', 55000); args=[22, '유황오리 누룽지', 55000]
+2020-08-01 08:09:03,436 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 22; args=(22,)
+2020-08-01 08:09:03,437 DEBUG (0.001) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (22, '능이오리백숙', 65000); args=[22, '능이오리백숙', 65000]
+2020-08-01 08:09:03,438 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 22; args=(22,)
+2020-08-01 08:09:03,438 DEBUG (0.000) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (22, '토종닭묵은지볶음탕', 50000); args=[22, '토종닭묵은지볶음탕', 50000]
+2020-08-01 08:09:11,628 DEBUG (0.000) SELECT COUNT(*) AS "__count" FROM "stores"; args=()
+2020-08-01 08:09:11,629 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores"  LIMIT 20; args=()
+2020-08-01 08:09:16,500 DEBUG (0.000) SELECT COUNT(*) AS "__count" FROM "stores"; args=()
+2020-08-01 08:09:16,501 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores"  LIMIT 2 OFFSET 20; args=()
