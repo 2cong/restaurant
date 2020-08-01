@@ -1,8 +1,14 @@
 from rest_framework import serializers
+from .models import Store, Menu
 
-class StoreSerializer(serializers.Serializer):
-    id = serializers.IntegerField(read_only=True)
-    name = serializers.CharField(max_length=50)
-    description = serializers.CharField(max_length=2000)
-    address = serializers.CharField(max_length=100)
-    phone_number = serializers.CharField(max_length=20)
+class StoreSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Store
+        fields = ['id', 'name', 'description', 'address', 'phone_number']
+
+class MenuSerializer(serializers.ModelSerializer):
+    store_id = serializers.RelatedField(source='store', read_only = True)
+
+    class Meta:
+        model = Menu
+        fields = ['id', 'name', 'price', ' store_id']
