@@ -12,6 +12,7 @@ class DetailView(View):
         try:
             restaurant_id = request.GET['restaurant_id']
 
+            # 레스토랑 정보 및 해당 정보 받아오기
             restaurant_information = Store.objects.get(id=restaurant_id)
             menu_information = Menu.objects.select_related('store_id').filter(store_id=restaurant_id)
 
@@ -34,6 +35,8 @@ class DetailView(View):
 
         except KeyError:
             return JsonResponse({"message":"DATA ERROR"}, status = 400)
+        except Exception as e:
+            return JsonResponse({"message":f"{e}"}, status = 500)
 
 # 음식점 Create API
 class CreateStoreView(View):
