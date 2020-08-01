@@ -295,3 +295,25 @@
             WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
             ORDER BY name; args=None
 2020-08-01 07:40:26,801 DEBUG (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2020-08-01 07:44:24,517 DEBUG (0.000) SELECT COUNT(*) AS "__count" FROM "stores"; args=()
+2020-08-01 07:44:24,518 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores"  LIMIT 18; args=()
+2020-08-01 07:44:27,370 DEBUG (0.000) SELECT COUNT(*) AS "__count" FROM "stores"; args=()
+2020-08-01 07:44:27,370 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores"  LIMIT 18; args=()
+2020-08-01 07:45:17,187 DEBUG (0.000) SELECT COUNT(*) AS "__count" FROM "stores"; args=()
+2020-08-01 07:45:17,188 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores"  LIMIT 18; args=()
+2020-08-01 07:45:21,951 DEBUG (0.000) BEGIN; args=None
+2020-08-01 07:45:21,956 DEBUG (0.005) INSERT INTO "stores" ("name", "description", "address", "phone_number") VALUES ('슬로우앤티', '저희 슬로우앤티 는 slow and T = 여유로움에 T를 더한다.... 라는 의미로 여유로움에 Time. Tea. Travel. Tree. Table이 함께 한다는 뜻입니다.', '서울 금천구 가산디지털1로 142', '02-2067-1293'); args=['슬로우앤티', '저희 슬로우앤티 는 slow and T = 여유로움에 T를 더한다.... 라는 의미로 여유로움에 Time. Tea. Travel. Tree. Table이 함께 한다는 뜻입니다.', '서울 금천구 가산디지털1로 142', '02-2067-1293']
+2020-08-01 07:45:21,957 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" ORDER BY "stores"."id" DESC  LIMIT 1; args=()
+2020-08-01 07:45:22,508 DEBUG (0.000) BEGIN; args=None
+2020-08-01 07:45:22,509 DEBUG (0.000) INSERT INTO "stores" ("name", "description", "address", "phone_number") VALUES ('슬로우앤티', '저희 슬로우앤티 는 slow and T = 여유로움에 T를 더한다.... 라는 의미로 여유로움에 Time. Tea. Travel. Tree. Table이 함께 한다는 뜻입니다.', '서울 금천구 가산디지털1로 142', '02-2067-1293'); args=['슬로우앤티', '저희 슬로우앤티 는 slow and T = 여유로움에 T를 더한다.... 라는 의미로 여유로움에 Time. Tea. Travel. Tree. Table이 함께 한다는 뜻입니다.', '서울 금천구 가산디지털1로 142', '02-2067-1293']
+2020-08-01 07:45:22,509 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" ORDER BY "stores"."id" DESC  LIMIT 1; args=()
+2020-08-01 07:45:24,029 DEBUG (0.000) BEGIN; args=None
+2020-08-01 07:45:24,029 DEBUG (0.000) INSERT INTO "stores" ("name", "description", "address", "phone_number") VALUES ('슬로우앤티', '저희 슬로우앤티 는 slow and T = 여유로움에 T를 더한다.... 라는 의미로 여유로움에 Time. Tea. Travel. Tree. Table이 함께 한다는 뜻입니다.', '서울 금천구 가산디지털1로 142', '02-2067-1293'); args=['슬로우앤티', '저희 슬로우앤티 는 slow and T = 여유로움에 T를 더한다.... 라는 의미로 여유로움에 Time. Tea. Travel. Tree. Table이 함께 한다는 뜻입니다.', '서울 금천구 가산디지털1로 142', '02-2067-1293']
+2020-08-01 07:45:24,030 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" ORDER BY "stores"."id" DESC  LIMIT 1; args=()
+2020-08-01 07:45:24,828 DEBUG (0.000) BEGIN; args=None
+2020-08-01 07:45:24,828 DEBUG (0.000) INSERT INTO "stores" ("name", "description", "address", "phone_number") VALUES ('슬로우앤티', '저희 슬로우앤티 는 slow and T = 여유로움에 T를 더한다.... 라는 의미로 여유로움에 Time. Tea. Travel. Tree. Table이 함께 한다는 뜻입니다.', '서울 금천구 가산디지털1로 142', '02-2067-1293'); args=['슬로우앤티', '저희 슬로우앤티 는 slow and T = 여유로움에 T를 더한다.... 라는 의미로 여유로움에 Time. Tea. Travel. Tree. Table이 함께 한다는 뜻입니다.', '서울 금천구 가산디지털1로 142', '02-2067-1293']
+2020-08-01 07:45:24,829 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" ORDER BY "stores"."id" DESC  LIMIT 1; args=()
+2020-08-01 07:45:27,187 DEBUG (0.000) SELECT COUNT(*) AS "__count" FROM "stores"; args=()
+2020-08-01 07:45:27,187 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores"  LIMIT 2 OFFSET 20; args=()
+2020-08-01 07:45:30,169 DEBUG (0.000) SELECT COUNT(*) AS "__count" FROM "stores"; args=()
+2020-08-01 07:45:30,170 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores"  LIMIT 20; args=()
