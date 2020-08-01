@@ -71,3 +71,41 @@ class CreateStoreView(View):
             return JsonResponse({"message":"DATA ERROR"}, status = 400)
         except Exception as e:
             return JsonResponse({"message":f"{e}"}, status = 500)
+
+# 메뉴 Create API
+class CreateMenuView(View):
+    @transaction.atomic
+    def post(self, request):
+        try:
+            menu_data = json.loads(request.body)
+
+            # 해당 음식점에 menu 추가하기 위해서 restaurant_id 받아옴
+            restaurant_id = request.GET['restaurant_id']
+
+            # 해당 음식점이 존재하지 않으면 에러처리
+            if Store.objects.filter(id=restaurant_id).exists() is False:
+                return JsonResponse({"message":"DATA ERROR"}, status = 400)
+
+            # request body를 통해 받은 값을 db에 추가
+            Menu.objects.create(
+                store_id = Store.objects.get(id=restaurant_id),
+                name = menu_data['name'],
+                price = menu_data['price']
+            )
+
+            # db에 추가한 값 중 마지막 id의 정보 불러오기
+            new_menu = Menu.objects.latest('id')
+
+            # 추가된 메뉴 정보 불러오기
+            menu = {
+                "id": new_menu.id,
+                "name": new_menu.name,
+                "price": new_menu.price
+            }
+
+            return JsonResponse({"data":menu}, status = 201)
+
+        except KeyError:
+            return JsonResponse({"message":"DATA ERROR"}, status = 400)
+        except Exception as e:
+            return JsonResponse({"message":f"{e}"}, status = 500)
