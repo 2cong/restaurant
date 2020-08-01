@@ -3,8 +3,38 @@ import json
 from django.views import View
 from django.http import HttpResponse, JsonResponse
 from django.db import transaction
+from django.core.paginator import Paginator
 
 from .models import Menu, Store
+
+# 음식점 List API
+class ListView(View):
+    def get(self, request):
+        try:
+            page = request.GET['page']
+
+            # 모든 음식점 정보 불러오기
+            restaurants = Store.objects.all()
+
+            # 한 페이지에 20개의 음식점 정보 불러오기
+            paginator = Paginator(restaurants, 20)
+            restaurant_data = paginator.get_page(page)
+
+            restaurant_list = [
+                {
+                    "id" : restaurant.id,
+                    "name" : restaurant.name,
+                    "address" : restaurant.address,
+                    "phone_number" : restaurant.phone_number
+                } for restaurant in restaurant_data
+            ]
+
+            return JsonResponse({"data": restaurant_list}, status = 200)
+
+        except KeyError:
+            return JsonResponse({"message":"DATA ERROR"}, status = 400)
+        except Exception as e:
+            return JsonResponse({"message":f"{e}"}, status = 500)
 
 # 음식점 Detail API
 class DetailView(View):
