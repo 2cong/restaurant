@@ -251,3 +251,47 @@
             WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
             ORDER BY name; args=None
 2020-08-01 07:12:13,036 DEBUG (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2020-08-01 07:14:16,888 DEBUG (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-08-01 07:14:16,889 DEBUG (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2020-08-01 07:36:25,902 DEBUG (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-08-01 07:36:25,904 DEBUG (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2020-08-01 07:36:34,714 DEBUG (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-08-01 07:36:34,715 DEBUG (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2020-08-01 07:37:03,511 DEBUG (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-08-01 07:37:03,512 DEBUG (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2020-08-01 07:37:24,070 DEBUG (0.000) SELECT COUNT(*) AS "__count" FROM "stores"; args=()
+2020-08-01 07:37:24,070 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores"  LIMIT 3 OFFSET 6; args=()
+2020-08-01 07:38:26,154 DEBUG (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-08-01 07:38:26,156 DEBUG (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2020-08-01 07:38:27,497 DEBUG (0.000) SELECT COUNT(*) AS "__count" FROM "stores"; args=()
+2020-08-01 07:38:27,498 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores"  LIMIT 3 OFFSET 6; args=()
+2020-08-01 07:38:36,882 DEBUG (0.000) SELECT COUNT(*) AS "__count" FROM "stores"; args=()
+2020-08-01 07:38:36,882 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores"  LIMIT 3; args=()
+2020-08-01 07:38:40,361 DEBUG (0.000) SELECT COUNT(*) AS "__count" FROM "stores"; args=()
+2020-08-01 07:38:40,361 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores"  LIMIT 3 OFFSET 3; args=()
+2020-08-01 07:38:45,876 DEBUG (0.000) SELECT COUNT(*) AS "__count" FROM "stores"; args=()
+2020-08-01 07:38:45,876 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores"  LIMIT 3 OFFSET 6; args=()
+2020-08-01 07:39:01,152 DEBUG (0.000) SELECT COUNT(*) AS "__count" FROM "stores"; args=()
+2020-08-01 07:39:01,152 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores"  LIMIT 3 OFFSET 9; args=()
+2020-08-01 07:39:04,200 DEBUG (0.000) SELECT COUNT(*) AS "__count" FROM "stores"; args=()
+2020-08-01 07:39:04,200 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores"  LIMIT 3 OFFSET 12; args=()
+2020-08-01 07:40:26,799 DEBUG (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-08-01 07:40:26,801 DEBUG (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
