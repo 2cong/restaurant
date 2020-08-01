@@ -185,3 +185,69 @@
             WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
             ORDER BY name; args=None
 2020-08-01 06:51:17,855 DEBUG (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2020-08-01 06:52:54,541 DEBUG (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-08-01 06:52:54,543 DEBUG (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2020-08-01 06:52:57,971 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 1; args=(1,)
+2020-08-01 06:52:57,972 DEBUG (0.000) SELECT "menus"."id", "menus"."store_id_id", "menus"."name", "menus"."price", "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "menus" INNER JOIN "stores" ON ("menus"."store_id_id" = "stores"."id") WHERE "menus"."store_id_id" = 1; args=(1,)
+2020-08-01 07:01:39,585 DEBUG (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-08-01 07:01:39,587 DEBUG (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2020-08-01 07:03:11,667 DEBUG (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-08-01 07:03:11,669 DEBUG (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2020-08-01 07:03:32,107 DEBUG (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-08-01 07:03:32,109 DEBUG (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2020-08-01 07:04:48,672 DEBUG (0.000) BEGIN; args=None
+2020-08-01 07:05:25,404 DEBUG (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-08-01 07:05:25,406 DEBUG (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2020-08-01 07:06:27,952 DEBUG (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-08-01 07:06:27,954 DEBUG (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2020-08-01 07:06:36,764 DEBUG (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-08-01 07:06:36,766 DEBUG (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2020-08-01 07:07:12,981 DEBUG (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-08-01 07:07:12,983 DEBUG (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2020-08-01 07:07:23,959 DEBUG (0.000) BEGIN; args=None
+2020-08-01 07:11:39,908 DEBUG (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-08-01 07:11:39,910 DEBUG (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2020-08-01 07:11:43,585 DEBUG (0.000) BEGIN; args=None
+2020-08-01 07:11:43,587 DEBUG (0.000) SELECT (1) AS "a" FROM "stores" WHERE "stores"."id" = 17  LIMIT 1; args=(17,)
+2020-08-01 07:11:43,587 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 17; args=(17,)
+2020-08-01 07:11:43,590 DEBUG (0.002) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (17, '그릴리아(구운야채)샐러드', 6900); args=[17, '그릴리아(구운야채)샐러드', 6900]
+2020-08-01 07:11:43,590 DEBUG (0.000) SELECT "menus"."id", "menus"."store_id_id", "menus"."name", "menus"."price" FROM "menus" ORDER BY "menus"."id" DESC  LIMIT 1; args=()
+2020-08-01 07:11:49,417 DEBUG (0.000) BEGIN; args=None
+2020-08-01 07:11:49,418 DEBUG (0.000) SELECT (1) AS "a" FROM "stores" WHERE "stores"."id" = 145  LIMIT 1; args=(145,)
+2020-08-01 07:11:55,431 DEBUG (0.000) BEGIN; args=None
+2020-08-01 07:11:55,432 DEBUG (0.000) SELECT (1) AS "a" FROM "stores" WHERE "stores"."id" = 17  LIMIT 1; args=(17,)
+2020-08-01 07:11:55,432 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 17; args=(17,)
+2020-08-01 07:11:55,433 DEBUG (0.000) INSERT INTO "menus" ("store_id_id", "name", "price") VALUES (17, '그릴리아(구운야채)샐러드', 6900); args=[17, '그릴리아(구운야채)샐러드', 6900]
+2020-08-01 07:11:55,434 DEBUG (0.000) SELECT "menus"."id", "menus"."store_id_id", "menus"."name", "menus"."price" FROM "menus" ORDER BY "menus"."id" DESC  LIMIT 1; args=()
+2020-08-01 07:12:13,034 DEBUG (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-08-01 07:12:13,036 DEBUG (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
