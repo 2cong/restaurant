@@ -94,3 +94,8 @@
 2020-08-01 06:09:00,666 DEBUG (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
 2020-08-01 06:09:03,205 DEBUG (0.000) SELECT "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "stores" WHERE "stores"."id" = 1; args=(1,)
 2020-08-01 06:09:03,206 DEBUG (0.000) SELECT "menus"."id", "menus"."store_id_id", "menus"."name", "menus"."price", "stores"."id", "stores"."name", "stores"."description", "stores"."address", "stores"."phone_number" FROM "menus" INNER JOIN "stores" ON ("menus"."store_id_id" = "stores"."id") WHERE "menus"."store_id_id" = 1; args=(1,)
+2020-08-01 06:11:04,517 DEBUG (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-08-01 06:11:04,519 DEBUG (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
