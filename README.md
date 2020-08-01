@@ -8,3 +8,8 @@
 - 음식점 Detail API : [GET] restaurant/detail?restaurant_id=int
 - 음식점 Create API : [POST] restaurant
 - 메뉴 Create API : [POST] restaurant/menu?restaurant_id=int
+
+
+# Algorithm
+
+알고리즘 문제 풀이
